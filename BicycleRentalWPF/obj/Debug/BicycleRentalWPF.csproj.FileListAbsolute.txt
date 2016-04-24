@@ -1,1 +1,12 @@
 C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\bin\Debug\BicycleRentalWPF.exe.config
+C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\bin\Debug\BicycleRentalWPF.exe
+C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\bin\Debug\BicycleRentalWPF.pdb
+C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\MainWindow.baml
+C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\MainWindow.g.cs
+C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\App.g.cs
+C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF_MarkupCompile.cache
+C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.g.resources
+C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.Properties.Resources.resources
+C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.csproj.GenerateResource.Cache
+C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.exe
+C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.pdb

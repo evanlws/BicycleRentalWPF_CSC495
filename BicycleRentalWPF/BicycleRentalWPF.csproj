@@ -53,6 +53,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Fine.cs" />
+    <Compile Include="Persistable.cs" />
+    <Compile Include="Rental.cs" />
+    <Compile Include="RentalCollection.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="Vehicle.cs" />
+    <Compile Include="VehicleCollection.cs" />
+    <Compile Include="Worker.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
