@@ -24,5 +24,10 @@ namespace BicycleRentalWPF
     {
       InitializeComponent();
     }
+
+    private void exitButtonClicked(object sender, RoutedEventArgs e)
+    {
+      System.Environment.Exit(0);
+    }
   }
 }
