@@ -54,6 +54,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Fine.cs" />
+    <Compile Include="mainMenu.xaml.cs">
+      <DependentUpon>mainMenu.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Persistable.cs" />
     <Compile Include="Rental.cs" />
     <Compile Include="RentalCollection.cs" />
@@ -61,6 +64,10 @@
     <Compile Include="Vehicle.cs" />
     <Compile Include="VehicleCollection.cs" />
     <Compile Include="Worker.cs" />
+    <Page Include="mainMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
