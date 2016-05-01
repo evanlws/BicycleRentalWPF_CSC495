@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="insertUser" Height="477.311" Width="502.521">
     <Grid x:Name="lastNameTextBox" Margin="0,0,-8,-1">
-        <Label Content="Enter New User Data" Height="36" Margin="57,10,124,0" VerticalAlignment="Top" Width="322" FontSize="20" HorizontalAlignment="Center" FontWeight="Medium"/>
+        <Label Content="Insert New User Data" Height="36" Margin="57,10,124,0" VerticalAlignment="Top" Width="322" FontSize="20" HorizontalAlignment="Center" FontWeight="Medium"/>
         <Label x:Name="BannerIDLabel" Content="Banner ID" HorizontalAlignment="Left" Margin="57,72,0,0" VerticalAlignment="Top" Width="77"/>
         <Label x:Name="FirstNameLabel" Content="First Name" HorizontalAlignment="Left" Margin="57,103,0,0" VerticalAlignment="Top" Width="77"/>
         <Label x:Name="LastNameLabel" Content="Last Name" HorizontalAlignment="Left" Margin="57,135,0,0" VerticalAlignment="Top" Width="77"/>
