@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="modifyWorker" Height="229.32" Width="467.277">
     <Grid Margin="0,0,-8,1">
-        <Label x:Name="modifyTitleLabel" Content="Modify Worker Data" Height="36" Margin="33,10,112,0" VerticalAlignment="Top" Width="322" FontSize="20" HorizontalAlignment="Center" FontWeight="Medium"/>
+        <Label x:Name="TitleLabel" Content="Modify Worker Information " Height="36" Margin="33,10,112,0" VerticalAlignment="Top" Width="322" FontSize="20" HorizontalAlignment="Center" FontWeight="Medium"/>
         <Label x:Name="EnterBannerIDLabel" Content="Enter Worker Banner ID " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="33,61,0,0"/>
         <Button x:Name="BackButton" Content="Back" HorizontalAlignment="Left" Margin="108,142,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.317,-0.3" Height="20"/>
         <Button x:Name="SubmitButton" Content="Submit" HorizontalAlignment="Left" Margin="287,142,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.317,-0.3" Height="20"/>
-        <TextBox x:Name="BannerIDTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="176,61,0,0"/>
+        <TextBox x:Name="BannerIDTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" Margin="176,61,0,0"/>
 
     </Grid>
 </Window>

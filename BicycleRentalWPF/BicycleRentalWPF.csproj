@@ -53,17 +53,104 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="deleteUser1.xaml.cs">
+      <DependentUpon>deleteUser1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="deleteUser2.xaml.cs">
+      <DependentUpon>deleteUser2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="deleteVehicle1.xaml.cs">
+      <DependentUpon>deleteVehicle1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="deleteVehicle2.xaml.cs">
+      <DependentUpon>deleteVehicle2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="deleteWorker1.xaml.cs">
+      <DependentUpon>deleteWorker1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="deleteWorker2.xaml.cs">
+      <DependentUpon>deleteWorker2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Fine.cs" />
+    <Compile Include="insertUser.xaml.cs">
+      <DependentUpon>insertUser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="insertVehicle.xaml.cs">
+      <DependentUpon>insertVehicle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="insertWorker.xaml.cs">
+      <DependentUpon>insertWorker.xaml</DependentUpon>
+    </Compile>
     <Compile Include="mainMenu.xaml.cs">
       <DependentUpon>mainMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="modifyUser1.xaml.cs">
+      <DependentUpon>modifyUser1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="modifyUser2.xaml.cs">
+      <DependentUpon>modifyUser2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="modifyVechicle2.xaml.cs">
+      <DependentUpon>modifyVechicle2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="modifyVehicle1.xaml.cs">
+      <DependentUpon>modifyVehicle1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="modifyWorker1.xaml.cs">
+      <DependentUpon>modifyWorker1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="modifyWorker2.xaml.cs">
+      <DependentUpon>modifyWorker2.xaml</DependentUpon>
     </Compile>
     <Compile Include="Persistable.cs" />
     <Compile Include="Rental.cs" />
     <Compile Include="RentalCollection.cs" />
+    <Compile Include="rentVehicle.xaml.cs">
+      <DependentUpon>rentVehicle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="returnVehicle.xaml.cs">
+      <DependentUpon>returnVehicle.xaml</DependentUpon>
+    </Compile>
     <Compile Include="User.cs" />
     <Compile Include="Vehicle.cs" />
     <Compile Include="VehicleCollection.cs" />
     <Compile Include="Worker.cs" />
+    <Page Include="deleteUser1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="deleteUser2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="deleteVehicle1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="deleteVehicle2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="deleteWorker1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="deleteWorker2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="insertUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="insertVehicle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="insertWorker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="mainMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -80,6 +167,38 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="modifyUser1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="modifyUser2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="modifyVechicle2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="modifyVehicle1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="modifyWorker1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="modifyWorker2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="rentVehicle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="returnVehicle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

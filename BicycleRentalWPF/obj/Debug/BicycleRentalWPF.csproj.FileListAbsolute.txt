@@ -26,3 +26,9 @@ C:\Users\Van\Desktop\C# Final Project wpf\BicycleRentalWPF_CSC495\BicycleRentalW
 C:\Users\Van\Desktop\C# Final Project wpf\BicycleRentalWPF_CSC495\BicycleRentalWPF\obj\Debug\mainMenu.g.cs
 C:\Users\Van\Desktop\C# Final Project wpf\BicycleRentalWPF_CSC495\BicycleRentalWPF\obj\Debug\BicycleRentalWPF_MarkupCompile.lref
 C:\Users\Van\Desktop\C# Final Project wpf\BicycleRentalWPF_CSC495\BicycleRentalWPF\obj\Debug\mainMenu.baml
+C:\Users\VanLe\Desktop\C# Final Project wpf\BicycleRentalWPF_CSC495\BicycleRentalWPF\bin\Debug\BicycleRentalWPF.exe.config
+C:\Users\VanLe\Desktop\C# Final Project wpf\BicycleRentalWPF_CSC495\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.exe
+C:\Users\VanLe\Desktop\C# Final Project wpf\BicycleRentalWPF_CSC495\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.pdb
+F:\Brockport 2016 Spring\C# class\final project\C# Final Project wpf\BicycleRentalWPF_CSC495\BicycleRentalWPF\bin\Debug\BicycleRentalWPF.exe.config
+F:\Brockport 2016 Spring\C# class\final project\C# Final Project wpf\BicycleRentalWPF_CSC495\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.exe
+F:\Brockport 2016 Spring\C# class\final project\C# Final Project wpf\BicycleRentalWPF_CSC495\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.pdb

@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BicycleRentalWPF"
         mc:Ignorable="d"
-        Title="insertUser" Height="477.311" Width="502.521">
+        Title="insertUser" Height="430.516" Width="502.521">
     <Grid x:Name="lastNameTextBox" Margin="0,0,-8,-1">
-        <Label Content="Insert New User Data" Height="36" Margin="57,10,124,0" VerticalAlignment="Top" Width="322" FontSize="20" HorizontalAlignment="Center" FontWeight="Medium"/>
+        <Label Content="Insert New User Information " Height="36" Margin="57,10,124,0" VerticalAlignment="Top" Width="322" FontSize="20" HorizontalAlignment="Center" FontWeight="Medium"/>
         <Label x:Name="BannerIDLabel" Content="Banner ID" HorizontalAlignment="Left" Margin="57,72,0,0" VerticalAlignment="Top" Width="77"/>
         <Label x:Name="FirstNameLabel" Content="First Name" HorizontalAlignment="Left" Margin="57,103,0,0" VerticalAlignment="Top" Width="77"/>
         <Label x:Name="LastNameLabel" Content="Last Name" HorizontalAlignment="Left" Margin="57,135,0,0" VerticalAlignment="Top" Width="77"/>
@@ -16,7 +16,6 @@
         <Label x:Name="UserTypeLabel" Content="User Type" HorizontalAlignment="Left" Margin="57,228,0,0" VerticalAlignment="Top" Width="77"/>
         <Label x:Name="NoteLabel" Content="Note" HorizontalAlignment="Left" Margin="57,259,0,0" VerticalAlignment="Top" Width="77"/>
         <Label x:Name="StatusLabel" Content="Status" HorizontalAlignment="Left" Margin="57,290,0,0" VerticalAlignment="Top" Width="77"/>
-        <Label x:Name="DateStatusUpdateLabel" Content="Date Status Updated" HorizontalAlignment="Left" Margin="57,321,0,0" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="BannerIDTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="201,76,0,0"/>
         <TextBox x:Name="FirstNameTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="201,107,0,0"/>
         <TextBox x:Name="LastNameTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="201,139,0,0"/>
@@ -24,10 +23,9 @@
         <TextBox x:Name="EmailTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="201,201,0,0"/>
         <TextBox x:Name="UserTypeTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="201,231,0,0"/>
         <TextBox x:Name="NoteTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="201,263,0,0"/>
-        <TextBox x:Name="StatusTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="201,294,0,0"/>
-        <TextBox x:Name="DateStatusUpdateTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="201,324,0,0"/>
-        <Button x:Name="BackButton" Content="Back" HorizontalAlignment="Left" Margin="120,386,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.317,-0.3" Height="20"/>
-        <Button x:Name="SubmitButton" Content="Submit" HorizontalAlignment="Left" Margin="299,386,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.317,-0.3" Height="20"/>
+        <Button x:Name="BackButton" Content="Back" HorizontalAlignment="Left" Margin="125,346,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.317,-0.3" Height="20"/>
+        <Button x:Name="SubmitButton" Content="Submit" HorizontalAlignment="Left" Margin="304,346,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.317,-0.3" Height="20"/>
+        <ComboBox x:Name="StatusComboBox" HorizontalAlignment="Left" Margin="201,294,0,0" VerticalAlignment="Top" Width="265"/>
 
     </Grid>
 </Window>
