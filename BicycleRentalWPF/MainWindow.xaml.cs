@@ -29,5 +29,17 @@ namespace BicycleRentalWPF
     {
       System.Environment.Exit(0);
     }
+
+    private void Button_Click(object sender, RoutedEventArgs e)
+    {
+            string bannerID = BannerIDTextBox.Text;
+            string password = PasswordTextBox.Text;
+
+            //Check and validate the data
+
+            mainMenu menu = new mainMenu();
+            this.Hide();
+            menu.Show();
+    }
   }
 }

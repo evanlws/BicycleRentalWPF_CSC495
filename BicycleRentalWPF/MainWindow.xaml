@@ -7,10 +7,10 @@
     <Label Content="Login Screen" Height="36" Margin="189,63,196,0" VerticalAlignment="Top" Width="132" FontSize="20" HorizontalAlignment="Center" FontWeight="Bold"/>
     <Label Content="BannerId:" HorizontalAlignment="Left" Margin="89,133,0,0" VerticalAlignment="Top" Width="64"/>
     <Label Content="Password:&#xD;&#xA;" HorizontalAlignment="Left" Margin="89,173,0,0" VerticalAlignment="Top" Width="64" Height="23"/>
-    <TextBox HorizontalAlignment="Left" Height="23" Margin="178,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220"/>
-    <TextBox HorizontalAlignment="Left" Height="23" Margin="178,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220"/>
-    <Button Content="SUBMIT" HorizontalAlignment="Left" Margin="149,230,0,0" VerticalAlignment="Top" Width="75"/>
-    <Button Content="EXIT" HorizontalAlignment="Left" Margin="292,230,0,0" VerticalAlignment="Top" Width="75" Click="exitButtonClicked"/>
+    <TextBox x:Name="BannerIDTextBox" HorizontalAlignment="Left" Height="23" Margin="178,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220"/>
+    <TextBox x:Name="PasswordTextBox" HorizontalAlignment="Left" Height="23" Margin="178,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220"/>
+    <Button Content="SUBMIT" HorizontalAlignment="Left" Margin="323,235,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+    <Button Content="EXIT" HorizontalAlignment="Left" Margin="178,235,0,0" VerticalAlignment="Top" Width="75" Click="exitButtonClicked"/>
 
   </Grid>
 </Window>
