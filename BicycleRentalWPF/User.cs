@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BicycleRentalWPF
 {
-  class User : Persistable
+  public class User : Persistable
   {
     private int ID
     {
@@ -62,18 +62,19 @@ namespace BicycleRentalWPF
     public User()
       : base() // call parent default constructor
     {
+
       connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;" +
-    @"Data source=..\BicycleRental.accdb";
-    }
+                @"Data source=..\BicycleRental.accdb";
+        }
     //------------------------------------------------------------------
     public User(string bannerId, string firstName, string lastName,
        string phoneNumber, string emailAddress, string userType, string notes, string status, string dateStatusUpdated)
       : base()
     {
       connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;" +
-    @"Data source=..\BicycleRental.accdb";
+                @"Data source=..\BicycleRental.accdb";
 
-      this.BannerId = bannerId;
+            this.BannerId = bannerId;
       this.FirstName = firstName;
       this.LastName = lastName;
       this.PhoneNumber = phoneNumber;

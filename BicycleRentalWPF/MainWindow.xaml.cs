@@ -45,11 +45,11 @@ namespace BicycleRentalWPF
         //string bannerID = BannerIDTextBox.Text;
         //string password = PasswordBox.Password;
 
-        validLogin = DataValidation.ValidateLogin(worker);
-
+        validLogin = DataValidation.ValidateLogin(worker);   //check if ID and Password matches
+       
         if(validLogin)
         {
-            mainMenu menu = new mainMenu();
+            mainMenu menu = new mainMenu(); //go to main menu
             this.Hide();
             menu.Show();   
         }

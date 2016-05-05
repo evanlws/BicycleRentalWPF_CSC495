@@ -29,7 +29,6 @@ namespace BicycleRentalWPF
             bool validData = false;
 
             User newUser = new User();
-
             newUser.setBannerId(BannerIDTextBox.Text);
             newUser.setFirstName(FirstNameTextBox.Text);
             newUser.setLastName(LastNameTextBox.Text);
@@ -38,10 +37,9 @@ namespace BicycleRentalWPF
             newUser.setUserType(UserTypeTextBox.Text);
             newUser.setNotes(NoteTextBox.Text);
             newUser.setStatus(StatusComboBox.Text);
-            
 
-    
-
+            newUser.insert();
+            MessageBox.Show("Inserted");
             //validData = DataValidation.ValidateInsertUser(newUser);
 
 
