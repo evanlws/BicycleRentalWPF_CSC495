@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BicycleRentalCLI
+namespace BicycleRentalWPF
 {
-  class Worker : Persistable
+  public class Worker : Persistable
   {
     private int ID { get; set; }
     private string BannerID { get; set; }

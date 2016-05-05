@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BicycleRentalCLI
+namespace BicycleRentalWPF
 {
   class User : Persistable
   {
@@ -277,6 +277,10 @@ namespace BicycleRentalCLI
     public void setNotes(string dob)
     {
       this.Notes = dob;
+    }
+    public void setStatus(string status)
+    {
+            this.Status = status;
     }
 
     public void setDateStatusUpdated(string dateStatusUpdated)

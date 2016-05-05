@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.OleDb;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,9 +19,11 @@ namespace BicycleRentalWPF
   /// <summary>
   /// Interaction logic for MainWindow.xaml
   /// </summary>
+  /// 
   public partial class MainWindow : Window
   {
-    public MainWindow()
+      
+        public MainWindow()
     {
       InitializeComponent();
     }
@@ -32,26 +35,28 @@ namespace BicycleRentalWPF
 
     private void Button_Click(object sender, RoutedEventArgs e)
     {
-            //LOGIN
-            bool validLogin = false; 
 
-            string bannerID = BannerIDTextBox.Text;
-            string password = PasswordBox.Password;
+        bool validLogin = false;
+        //LOGIN
+        Worker worker = new Worker();
+        worker.setBannerId(BannerIDTextBox.Text);
+        worker.setWorkerPassword(PasswordBox.Password);
+           
+        //string bannerID = BannerIDTextBox.Text;
+        //string password = PasswordBox.Password;
 
-            validLogin = DataValidation.ValidateData(bannerID, password);
+        validLogin = DataValidation.ValidateLogin(worker);
 
-          
-            if(validLogin)
-            {
-                mainMenu menu = new mainMenu();
-                this.Hide();
-                menu.Show();
-                
-            }
-            else
-            {
-                MessageBox.Show("Incorrect password, please try again");
-            }
+        if(validLogin)
+        {
+            mainMenu menu = new mainMenu();
+            this.Hide();
+            menu.Show();   
+        }
+        else
+        {
+            MessageBox.Show("Incorrect password, please try again");
+        }
 
 
     }

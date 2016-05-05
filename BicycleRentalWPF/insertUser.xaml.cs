@@ -23,5 +23,28 @@ namespace BicycleRentalWPF
         {
             InitializeComponent();
         }
+
+        private void SubmitButton_Click(object sender, RoutedEventArgs e)
+        {
+            bool validData = false;
+
+            User newUser = new User();
+
+            newUser.setBannerId(BannerIDTextBox.Text);
+            newUser.setFirstName(FirstNameTextBox.Text);
+            newUser.setLastName(LastNameTextBox.Text);
+            newUser.setPhoneNumber(PhoneNumberTextBox.Text);
+            newUser.setEmailAddress(EmailTextBox.Text);
+            newUser.setUserType(UserTypeTextBox.Text);
+            newUser.setNotes(NoteTextBox.Text);
+            newUser.setStatus(StatusComboBox.Text);
+            
+
+    
+
+            //validData = DataValidation.ValidateInsertUser(newUser);
+
+
+        }
     }
 }

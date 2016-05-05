@@ -24,8 +24,10 @@
         <TextBox x:Name="UserTypeTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="201,231,0,0"/>
         <TextBox x:Name="NoteTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="201,263,0,0"/>
         <Button x:Name="BackButton" Content="Back" HorizontalAlignment="Left" Margin="125,346,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.317,-0.3" Height="20"/>
-        <Button x:Name="SubmitButton" Content="Submit" HorizontalAlignment="Left" Margin="304,346,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.317,-0.3" Height="20"/>
-        <ComboBox x:Name="StatusComboBox" HorizontalAlignment="Left" Margin="201,294,0,0" VerticalAlignment="Top" Width="265"/>
-
+        <Button x:Name="SubmitButton" Content="Submit" HorizontalAlignment="Left" Margin="304,346,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.317,-0.3" Height="20" Click="SubmitButton_Click"/>
+        <ComboBox x:Name="StatusComboBox" HorizontalAlignment="Left" Margin="201,294,0,0" VerticalAlignment="Top" Width="265">
+            <ComboBoxItem IsSelected="True">Active</ComboBoxItem>
+            <ComboBoxItem>Unactive</ComboBoxItem>
+        </ComboBox>
     </Grid>
 </Window>

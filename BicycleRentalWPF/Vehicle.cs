@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BicycleRentalCLI
+namespace BicycleRentalWPF
 {
   class Vehicle : Persistable
   {
@@ -25,6 +25,7 @@ namespace BicycleRentalCLI
     {
       connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;" +
           @"Data source=..\BicycleRental.accdb";
+
     }
 
     //------------------------------------------------------------------

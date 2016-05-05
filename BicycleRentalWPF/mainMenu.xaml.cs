@@ -23,5 +23,13 @@ namespace BicycleRentalWPF
         {
             InitializeComponent();
         }
+
+        private void insertUserButton_Click(object sender, RoutedEventArgs e)
+        {
+            insertUser insertUserView = new insertUser();
+            this.Hide();
+            insertUserView.Show();
+            
+        }
     }
 }

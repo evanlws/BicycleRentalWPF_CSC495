@@ -10,7 +10,7 @@
         <Label Content="Brockport Bicycle Rental System" Height="36" Margin="94,24,84,0" VerticalAlignment="Top" Width="326" FontSize="20" HorizontalAlignment="Center" FontWeight="Medium"/>
         <Label Content="Main Menu" Height="36" Margin="170,60,198,0" VerticalAlignment="Top" Width="136" FontSize="20" HorizontalAlignment="Center" FontWeight="Medium"/>
         <Button x:Name="deleteUserButton" Content="Delete User" HorizontalAlignment="Left" Margin="29,164,0,0" VerticalAlignment="Top" Width="139" Height="20"/>
-        <Button x:Name="insertUserButton" Content="Insert User" HorizontalAlignment="Left" Margin="29,104,0,0" VerticalAlignment="Top" Width="139" Height="20"/>
+        <Button x:Name="insertUserButton" Content="Insert User" HorizontalAlignment="Left" Margin="29,104,0,0" VerticalAlignment="Top" Width="139" Height="20" Click="insertUserButton_Click"/>
         <Button x:Name="modifyUserButton" Content="Modify User" HorizontalAlignment="Left" Margin="29,134,0,0" VerticalAlignment="Top" Width="139" Height="20"/>
         <Button x:Name="deleteWorkerButton" Content="Delete Worker" HorizontalAlignment="Left" Margin="186,164,0,0" VerticalAlignment="Top" Width="139" Height="20"/>
         <Button x:Name="insertWorkerButton" Content="Insert Worker" HorizontalAlignment="Left" Margin="186,104,0,0" VerticalAlignment="Top" Width="139" Height="20"/>
