@@ -32,14 +32,28 @@ namespace BicycleRentalWPF
 
     private void Button_Click(object sender, RoutedEventArgs e)
     {
+            //LOGIN
+            bool validLogin = false; 
+
             string bannerID = BannerIDTextBox.Text;
-            string password = PasswordTextBox.Text;
+            string password = PasswordBox.Password;
 
-            //Check and validate the data
+            validLogin = DataValidation.ValidateData(bannerID, password);
 
-            mainMenu menu = new mainMenu();
-            this.Hide();
-            menu.Show();
+          
+            if(validLogin)
+            {
+                mainMenu menu = new mainMenu();
+                this.Hide();
+                menu.Show();
+                
+            }
+            else
+            {
+                MessageBox.Show("Incorrect password, please try again");
+            }
+
+
     }
   }
 }
