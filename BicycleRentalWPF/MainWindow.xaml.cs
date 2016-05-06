@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.OleDb;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -35,23 +34,22 @@ namespace BicycleRentalWPF
 
     private void Button_Click(object sender, RoutedEventArgs e)
     {
-            DataValidation dv = new DataValidation();   
-        bool validLogin = true;
-        List<string> dataInput = new List<string>(){ BannerIDTextBox.Text, PasswordBox.Password };
+      string bannerId = BannerIDTextBox.Text;
+      string password = PasswordBox.Password;
+      Worker worker = new Worker();
 
-        validLogin = dv.Login(dataInput);   //check if ID and Password matches
-       
-            if (validLogin)
-        {
-            mainMenu menu = new mainMenu(); //go to main menu
-            menu.ShowDialog();
-            this.Close();
+      worker.populateBannerId(bannerId);
 
-            }
-        else
-        {
-            MessageBox.Show("Incorrect password, please try again");
-        }
+      if (!(password.Equals(worker.getCredential())))
+      {
+        this.Hide();
+        mainMenu mm = new mainMenu();
+        mm.Show();
+      }
+      else
+      {
+        MessageBox.Show("Incorrect password or BannerID");
+      }
 
 
     }

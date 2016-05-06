@@ -16,7 +16,6 @@ namespace BicycleRentalWPF
     private string EmailAddress { get; set; }
     private string Credential { get; set; }
     private string InitialRegistrationDate { get; set; }
-    private string WorkerPassword { get; set; }
     private string Notes { get; set; }
     private string Status { get; set; }
     private string DateStatusUpdated { get; set; }
@@ -28,7 +27,7 @@ namespace BicycleRentalWPF
           @"Data source=..\BicycleRental.accdb";
     }
     //------------------------------------------------------------------
-    public Worker(string bannerId, string firstName, string lastName, string phoneNumber, string emailAddress, string credential, string dateOfInitialRegistration, string workerPassword, string notes, string status, string dateStatusUpdated)
+    public Worker(string bannerId, string firstName, string lastName, string phoneNumber, string emailAddress, string credential, string dateOfInitialRegistration, string notes, string status, string dateStatusUpdated)
       : base()
     {
       connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;" +
@@ -41,7 +40,6 @@ namespace BicycleRentalWPF
       this.EmailAddress = emailAddress;
       this.Credential = credential;
       this.InitialRegistrationDate = dateOfInitialRegistration;
-      this.WorkerPassword = workerPassword;
       this.Notes = notes;
       this.Status = status;
       this.DateStatusUpdated = dateStatusUpdated;
@@ -78,8 +76,47 @@ namespace BicycleRentalWPF
               Credential = Convert.ToString(rowValue);
             else if (count == 7)
               InitialRegistrationDate = Convert.ToString(rowValue);
-            else if (count == 8)
-              WorkerPassword = Convert.ToString(rowValue);
+            else if (count == 9)
+              Notes = Convert.ToString(rowValue);
+            else if (count == 10)
+              Status = Convert.ToString(rowValue);
+            else if (count == 11)
+              DateStatusUpdated = Convert.ToString(rowValue);
+            count = count + 1;
+          }
+        }
+      }
+    }
+
+    public void populateBannerId(string bannerId)
+    {
+      string queryString = "SELECT * FROM Worker WHERE (BannerId = '" + bannerId + "')";
+      List<Object> results = getValues(queryString);
+      if (results != null)
+      {
+        foreach (object result in results)
+        {
+          IEnumerable<Object> row = result as IEnumerable<Object>;
+          int count = 0;
+          foreach (object rowValue in row)
+          {
+            // DEBUG Console.WriteLine(rowValue);
+            if (count == 0)
+              ID = Convert.ToInt32(rowValue);
+            else if (count == 1)
+              BannerID = Convert.ToString(rowValue);
+            else if (count == 2)
+              FirstName = Convert.ToString(rowValue);
+            else if (count == 3)
+              LastName = Convert.ToString(rowValue);
+            else if (count == 4)
+              PhoneNumber = Convert.ToString(rowValue);
+            else if (count == 5)
+              EmailAddress = Convert.ToString(rowValue);
+            else if (count == 6)
+              Credential = Convert.ToString(rowValue);
+            else if (count == 7)
+              InitialRegistrationDate = Convert.ToString(rowValue);
             else if (count == 9)
               Notes = Convert.ToString(rowValue);
             else if (count == 10)
@@ -97,7 +134,7 @@ namespace BicycleRentalWPF
 
       InitialRegistrationDate = DateTime.Now.ToString("yyyy-MM-dd");
       string insertQuery =
-      "INSERT INTO [Worker] (BannerID, FirstName, LastName, PhoneNumber, EmailAddress, Credential, InitialRegistrationDate, WorkerPassword, Notes, Status, DateStatusUpdated) " +
+      "INSERT INTO [Worker] (BannerID, FirstName, LastName, PhoneNumber, EmailAddress, Credential, InitialRegistrationDate, Notes, Status, DateStatusUpdated) " +
       "VALUES (" +
       "'" + this.BannerID + "', '" +
       this.FirstName + "', '" +
@@ -106,7 +143,6 @@ namespace BicycleRentalWPF
       this.EmailAddress + "', '" +
       this.Credential + "', '" +
       this.InitialRegistrationDate + "', '" +
-      this.WorkerPassword + "', '" +
       this.Notes + "', '" +
       this.Status + "', '" +
       this.DateStatusUpdated + "')";
@@ -147,7 +183,6 @@ namespace BicycleRentalWPF
     " EmailAddress = '" + this.EmailAddress + "', " +
     " Credential = '" + this.Credential + "', " +
     " InitialRegistrationDate = '" + this.InitialRegistrationDate + "', " +
-    " WorkerPassword = '" + this.WorkerPassword + "', " +
     " Notes = '" + this.Notes + "', " +
     " Status = '" + this.Status + "', " +
     " DateStatusUpdated = '" + this.DateStatusUpdated + "' " +
@@ -208,11 +243,6 @@ namespace BicycleRentalWPF
       return this.InitialRegistrationDate;
     }
 
-    public string getWorkerPassword()
-    {
-      return this.WorkerPassword;
-    }
-
     public string getNotes()
     {
       return this.Notes;
@@ -261,11 +291,6 @@ namespace BicycleRentalWPF
     public void setDateOfInitialRegistration(string dateOfInitialRegistration)
     {
       this.InitialRegistrationDate = dateOfInitialRegistration;
-    }
-
-    public void setWorkerPassword(string workerPassword)
-    {
-      this.WorkerPassword = workerPassword;
     }
 
     public void setNotes(string notes)

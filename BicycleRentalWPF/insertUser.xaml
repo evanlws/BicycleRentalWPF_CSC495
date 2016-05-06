@@ -5,36 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BicycleRentalWPF"
         mc:Ignorable="d"
-        Title="insertUser" Height="430.516" Width="502.521">
-    <Grid x:Name="lastNameTextBox" Margin="0,0,-8,-1">
-        <Label Content="Insert New User Information " Height="36" Margin="57,10,124,0" VerticalAlignment="Top" Width="322" FontSize="20" HorizontalAlignment="Center" FontWeight="Medium"/>
-        <Label x:Name="BannerIDLabel" Content="Banner ID" HorizontalAlignment="Left" Margin="57,72,0,0" VerticalAlignment="Top" Width="77"/>
-        <Label x:Name="FirstNameLabel" Content="First Name" HorizontalAlignment="Left" Margin="57,103,0,0" VerticalAlignment="Top" Width="77"/>
-        <Label x:Name="LastNameLabel" Content="Last Name" HorizontalAlignment="Left" Margin="57,135,0,0" VerticalAlignment="Top" Width="77"/>
-        <Label x:Name="EmailLabel" Content="Email" HorizontalAlignment="Left" Margin="57,197,0,0" VerticalAlignment="Top" Width="77"/>
-        <Label x:Name="PhoneNumberLabel" Content="Phone Number" HorizontalAlignment="Left" Margin="57,166,0,0" VerticalAlignment="Top" Width="93"/>
-        <Label x:Name="UserTypeLabel" Content="User Type" HorizontalAlignment="Left" Margin="57,228,0,0" VerticalAlignment="Top" Width="77"/>
-        <Label x:Name="NoteLabel" Content="Note" HorizontalAlignment="Left" Margin="57,259,0,0" VerticalAlignment="Top" Width="77"/>
-        <Label x:Name="StatusLabel" Content="Status" HorizontalAlignment="Left" Margin="57,290,0,0" VerticalAlignment="Top" Width="77"/>
-        <TextBox x:Name="BannerIDTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="201,76,0,0"/>
-        <TextBox x:Name="FirstNameTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="201,107,0,0"/>
-        <TextBox x:Name="LastNameTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="201,139,0,0"/>
-        <TextBox x:Name="PhoneNumberTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="201,170,0,0"/>
-        <TextBox x:Name="EmailTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="201,201,0,0"/>
-        <TextBox x:Name="NoteTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="201,263,0,0"/>
-        <Button x:Name="BackButton" Content="Back" HorizontalAlignment="Left" Margin="125,346,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.317,-0.3" Height="20" Click="BackButton_Click"/>
-        <Button x:Name="SubmitButton" Content="Submit" HorizontalAlignment="Left" Margin="304,346,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.317,-0.3" Height="20" Click="SubmitButton_Click"/>
-        <ComboBox x:Name="StatusComboBox" HorizontalAlignment="Left" Margin="201,294,0,0" VerticalAlignment="Top" Width="265" Height="22">
-            <ComboBoxItem IsSelected="True">Active</ComboBoxItem>
-            <ComboBoxItem>Unactive</ComboBoxItem>
-        </ComboBox>
-        <ComboBox x:Name="StatusComboBox_Copy" HorizontalAlignment="Left" Margin="201,294,0,0" VerticalAlignment="Top" Width="265" Height="22">
-            <ComboBoxItem IsSelected="True" Content="Active"/>
-            <ComboBoxItem Content="Unactive"/>
-        </ComboBox>
-        <ComboBox x:Name="UserTypeComboBox" HorizontalAlignment="Left" Margin="201,232,0,0" VerticalAlignment="Top" Width="265" Height="26">
-            <ComboBoxItem IsSelected="True" Content="Student"/>
-            <ComboBoxItem Content="Faculty/Staff"/>
-        </ComboBox>
-    </Grid>
+        Title="insertUser" Height="466.553" Width="505.404">
+  <Grid x:Name="lastNameTextBox" Margin="0,0,2,1">
+    <Label Content="Insert New User Information " Height="36" Margin="57,10,124,0" VerticalAlignment="Top" Width="322" FontSize="20" HorizontalAlignment="Center" FontWeight="Medium"/>
+    <Label x:Name="BannerIDLabel" Content="Banner ID" HorizontalAlignment="Left" Margin="57,72,0,0" VerticalAlignment="Top" Width="77"/>
+    <Label x:Name="FirstNameLabel" Content="First Name" HorizontalAlignment="Left" Margin="57,103,0,0" VerticalAlignment="Top" Width="77"/>
+    <Label x:Name="LastNameLabel" Content="Last Name" HorizontalAlignment="Left" Margin="57,135,0,0" VerticalAlignment="Top" Width="77"/>
+    <Label x:Name="EmailLabel" Content="Email" HorizontalAlignment="Left" Margin="57,197,0,0" VerticalAlignment="Top" Width="77"/>
+    <Label x:Name="PhoneNumberLabel" Content="Phone Number" HorizontalAlignment="Left" Margin="57,166,0,0" VerticalAlignment="Top" Width="93"/>
+    <Label x:Name="UserTypeLabel" Content="User Type" HorizontalAlignment="Left" Margin="57,228,0,0" VerticalAlignment="Top" Width="77"/>
+    <Label x:Name="NoteLabel" Content="Note" HorizontalAlignment="Left" Margin="57,259,0,0" VerticalAlignment="Top" Width="77"/>
+    <Label x:Name="StatusLabel" Content="Status" HorizontalAlignment="Left" Margin="57,290,0,0" VerticalAlignment="Top" Width="77"/>
+    <TextBox x:Name="BannerIDTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="201,76,0,0"/>
+    <TextBox x:Name="FirstNameTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="201,107,0,0"/>
+    <TextBox x:Name="LastNameTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="201,139,0,0"/>
+    <TextBox x:Name="PhoneNumberTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="201,170,0,0"/>
+    <TextBox x:Name="EmailTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="201,201,0,0"/>
+    <TextBox x:Name="NoteTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="201,263,0,0"/>
+    <Button x:Name="BackButton" Content="Back" HorizontalAlignment="Left" Margin="125,379,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.317,-0.3" Height="20" Click="BackButton_Click"/>
+    <Button x:Name="SubmitButton" Content="Submit" HorizontalAlignment="Left" Margin="304,379,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.317,-0.3" Height="20" Click="SubmitButton_Click"/>
+    <ComboBox x:Name="StatusComboBox" HorizontalAlignment="Left" Margin="201,294,0,0" VerticalAlignment="Top" Width="265" Height="22">
+      <ComboBoxItem IsSelected="True">Active</ComboBoxItem>
+      <ComboBoxItem>Unactive</ComboBoxItem>
+    </ComboBox>
+    <ComboBox x:Name="StatusComboBox_Copy" HorizontalAlignment="Left" Margin="201,294,0,0" VerticalAlignment="Top" Width="265" Height="22">
+      <ComboBoxItem IsSelected="True" Content="Active"/>
+      <ComboBoxItem Content="Unactive"/>
+    </ComboBox>
+    <ComboBox x:Name="UserTypeComboBox" HorizontalAlignment="Left" Margin="201,232,0,0" VerticalAlignment="Top" Width="265" Height="26">
+      <ComboBoxItem IsSelected="True" Content="Student"/>
+      <ComboBoxItem Content="Faculty/Staff"/>
+    </ComboBox>
+    <Label x:Name="DateStatusUpdatedLabel" Content="Date Status Updated" HorizontalAlignment="Left" Margin="57,329,0,0" VerticalAlignment="Top" Width="123"/>
+    <TextBox x:Name="DateStatusUpdatedTextField" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="201,333,0,0"/>
+  </Grid>
 </Window>
