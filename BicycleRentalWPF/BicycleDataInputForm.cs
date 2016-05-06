@@ -157,7 +157,7 @@ namespace BicycleRentalWPF
                 string status = Convert.ToString(StatusComboBox.SelectedItem);
 
                 Vehicle newVehicle = new Vehicle(bikeMake, modelNumber, serialNumber,
-                    color, description, location, physicalDescription, notes);
+                    color, description, location, physicalDescription, notes, status);
                 newVehicle.insert();
 
                 System.Windows.Forms.MessageBox.Show("Successfully inserted bicycle");

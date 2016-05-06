@@ -30,7 +30,7 @@ namespace BicycleRentalWPF
         }
 
       public Vehicle(string bikeMake, string modelNumber, string serialNumber, string color,
-            string description, string location, string physicalCondition, string notes)
+            string description, string location, string physicalCondition, string notes, string status)
             : base()
         {
           connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;" +
@@ -43,7 +43,7 @@ namespace BicycleRentalWPF
             this.Location = location;
             this.PhysicalCondition = physicalCondition;
             this.Notes = notes;
-            this.Status = "Active";
+            this.Status = status;
             this.DateStatusUpdated = DateTime.Now.ToString("yyyy-MM-dd");
 
         }
