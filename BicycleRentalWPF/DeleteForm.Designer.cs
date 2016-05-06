@@ -39,12 +39,12 @@
       // 
       this.FormTitle.AutoSize = true;
       this.FormTitle.BackColor = System.Drawing.Color.Transparent;
-      this.FormTitle.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.FormTitle.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.FormTitle.ForeColor = System.Drawing.Color.Black;
-      this.FormTitle.Location = new System.Drawing.Point(125, 50);
+      this.FormTitle.Location = new System.Drawing.Point(15, 42);
       this.FormTitle.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
       this.FormTitle.Name = "FormTitle";
-      this.FormTitle.Size = new System.Drawing.Size(283, 22);
+      this.FormTitle.Size = new System.Drawing.Size(298, 22);
       this.FormTitle.TabIndex = 0;
       this.FormTitle.Text = "Enter ID of Object to be Deleted";
       // 

@@ -55,12 +55,12 @@
       // 
       this.BicycleDataInputFormTitle.AutoSize = true;
       this.BicycleDataInputFormTitle.BackColor = System.Drawing.Color.Transparent;
-      this.BicycleDataInputFormTitle.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.BicycleDataInputFormTitle.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.BicycleDataInputFormTitle.ForeColor = System.Drawing.Color.Black;
-      this.BicycleDataInputFormTitle.Location = new System.Drawing.Point(146, 9);
+      this.BicycleDataInputFormTitle.Location = new System.Drawing.Point(15, 9);
       this.BicycleDataInputFormTitle.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
       this.BicycleDataInputFormTitle.Name = "BicycleDataInputFormTitle";
-      this.BicycleDataInputFormTitle.Size = new System.Drawing.Size(224, 22);
+      this.BicycleDataInputFormTitle.Size = new System.Drawing.Size(187, 19);
       this.BicycleDataInputFormTitle.TabIndex = 0;
       this.BicycleDataInputFormTitle.Text = "Enter New Bicycle Data";
       // 

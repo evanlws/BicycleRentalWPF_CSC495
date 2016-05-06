@@ -55,12 +55,12 @@
       // 
       this.WorkerDataLabel.AutoSize = true;
       this.WorkerDataLabel.BackColor = System.Drawing.Color.Transparent;
-      this.WorkerDataLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.WorkerDataLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.WorkerDataLabel.ForeColor = System.Drawing.Color.Black;
-      this.WorkerDataLabel.Location = new System.Drawing.Point(194, 25);
+      this.WorkerDataLabel.Location = new System.Drawing.Point(13, 20);
       this.WorkerDataLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.WorkerDataLabel.Name = "WorkerDataLabel";
-      this.WorkerDataLabel.Size = new System.Drawing.Size(208, 22);
+      this.WorkerDataLabel.Size = new System.Drawing.Size(186, 19);
       this.WorkerDataLabel.TabIndex = 0;
       this.WorkerDataLabel.Text = "Enter New Worker Data";
       // 
@@ -70,7 +70,7 @@
       this.BannerID.BackColor = System.Drawing.Color.Transparent;
       this.BannerID.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.BannerID.ForeColor = System.Drawing.Color.Black;
-      this.BannerID.Location = new System.Drawing.Point(43, 72);
+      this.BannerID.Location = new System.Drawing.Point(40, 72);
       this.BannerID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.BannerID.Name = "BannerID";
       this.BannerID.Size = new System.Drawing.Size(95, 22);

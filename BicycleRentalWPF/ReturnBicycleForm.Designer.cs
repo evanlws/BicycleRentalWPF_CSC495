@@ -39,12 +39,12 @@
       // 
       this.FormTitle.AutoSize = true;
       this.FormTitle.BackColor = System.Drawing.Color.Transparent;
-      this.FormTitle.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.FormTitle.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.FormTitle.ForeColor = System.Drawing.Color.Black;
-      this.FormTitle.Location = new System.Drawing.Point(240, 37);
+      this.FormTitle.Location = new System.Drawing.Point(15, 26);
       this.FormTitle.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
       this.FormTitle.Name = "FormTitle";
-      this.FormTitle.Size = new System.Drawing.Size(132, 22);
+      this.FormTitle.Size = new System.Drawing.Size(145, 22);
       this.FormTitle.TabIndex = 0;
       this.FormTitle.Text = "Return Bicycle";
       // 
@@ -54,7 +54,7 @@
       this.ChooseBicycle.BackColor = System.Drawing.Color.Transparent;
       this.ChooseBicycle.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.ChooseBicycle.ForeColor = System.Drawing.Color.Black;
-      this.ChooseBicycle.Location = new System.Drawing.Point(61, 107);
+      this.ChooseBicycle.Location = new System.Drawing.Point(46, 77);
       this.ChooseBicycle.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
       this.ChooseBicycle.Name = "ChooseBicycle";
       this.ChooseBicycle.Size = new System.Drawing.Size(230, 22);
@@ -65,7 +65,7 @@
       // 
       this.ChooseBicycleComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(29)))), ((int)(((byte)(18)))));
       this.ChooseBicycleComboBox.FormattingEnabled = true;
-      this.ChooseBicycleComboBox.Location = new System.Drawing.Point(303, 103);
+      this.ChooseBicycleComboBox.Location = new System.Drawing.Point(288, 73);
       this.ChooseBicycleComboBox.Margin = new System.Windows.Forms.Padding(6);
       this.ChooseBicycleComboBox.Name = "ChooseBicycleComboBox";
       this.ChooseBicycleComboBox.Size = new System.Drawing.Size(219, 32);
@@ -76,7 +76,7 @@
       this.SubmitButton.BackColor = System.Drawing.Color.Transparent;
       this.SubmitButton.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.SubmitButton.ForeColor = System.Drawing.Color.Black;
-      this.SubmitButton.Location = new System.Drawing.Point(315, 172);
+      this.SubmitButton.Location = new System.Drawing.Point(300, 142);
       this.SubmitButton.Margin = new System.Windows.Forms.Padding(6);
       this.SubmitButton.Name = "SubmitButton";
       this.SubmitButton.Size = new System.Drawing.Size(138, 42);
@@ -90,7 +90,7 @@
       this.BackButton.BackColor = System.Drawing.Color.Transparent;
       this.BackButton.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.BackButton.ForeColor = System.Drawing.Color.Black;
-      this.BackButton.Location = new System.Drawing.Point(122, 172);
+      this.BackButton.Location = new System.Drawing.Point(107, 142);
       this.BackButton.Margin = new System.Windows.Forms.Padding(6);
       this.BackButton.Name = "BackButton";
       this.BackButton.Size = new System.Drawing.Size(138, 42);
@@ -104,7 +104,7 @@
       this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.BackColor = System.Drawing.Color.White;
-      this.ClientSize = new System.Drawing.Size(598, 245);
+      this.ClientSize = new System.Drawing.Size(579, 209);
       this.Controls.Add(this.BackButton);
       this.Controls.Add(this.SubmitButton);
       this.Controls.Add(this.ChooseBicycleComboBox);

@@ -53,12 +53,12 @@
       // 
       this.UserDataLabel.AutoSize = true;
       this.UserDataLabel.BackColor = System.Drawing.Color.Transparent;
-      this.UserDataLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.UserDataLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.UserDataLabel.ForeColor = System.Drawing.Color.Black;
-      this.UserDataLabel.Location = new System.Drawing.Point(220, 9);
+      this.UserDataLabel.Location = new System.Drawing.Point(21, 9);
       this.UserDataLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
       this.UserDataLabel.Name = "UserDataLabel";
-      this.UserDataLabel.Size = new System.Drawing.Size(186, 22);
+      this.UserDataLabel.Size = new System.Drawing.Size(167, 19);
       this.UserDataLabel.TabIndex = 0;
       this.UserDataLabel.Text = "Enter New User Data";
       // 

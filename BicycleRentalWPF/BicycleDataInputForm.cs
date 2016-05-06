@@ -25,17 +25,14 @@ namespace BicycleRentalWPF
             BicycleDataInputFormTitle.Text = "Insert new Bicycle data";
             
 
-            Object[] location = new Object[10];
-            location[0] = "Benedict";
-            location[1] = "Brockway";
-            location[2] = "Harmon";
-            location[3] = "McFarlane";
-            location[4] = "Mortimer";
-            location[5] = "Union";
-            location[6] = "Thompson";
-            location[7] = "Townhomes";
-            location[8] = "Tuttle";
-            location[9] = "Welcome Center";
+            Object[] location = new Object[7];
+            location[0] = "Benedict Hall";
+            location[1] = "Harmon Hall";
+            location[2] = "McFarlane Hall";
+            location[3] = "Mortimer Hall";
+            location[4] = "Student Union";
+            location[5] = "Thompson Hall";
+            location[6] = "Welcome Center";
             LocationComboBox.Items.AddRange(location);
 
             Object[] physical = new Object[2];
@@ -44,13 +41,13 @@ namespace BicycleRentalWPF
             PhysicalConditionComboBox.Items.AddRange(physical);
 
             Object[] status = new Object[2];
-            status[0] = "Active";
-            status[1] = "Inactive";
+            status[0] = "Available";
+            status[1] = "Unavailable";
             StatusComboBox.Items.AddRange(status);
 
             StatusComboBox.SelectedIndex = 0;
 
-            FormAction = "Insert";
+            FormAction = "insert";
         }
 
         public BicycleDataInputForm(UpdateForm uf, int i, MainMenu mm)
@@ -62,17 +59,14 @@ namespace BicycleRentalWPF
 
             BicycleDataInputFormTitle.Text = "Modify Bicycle data";
 
-            Object[] location = new Object[10];
-            location[0] = "Benedict";
-            location[1] = "Brockway";
-            location[2] = "Harmon";
-            location[3] = "McFarlane";
-            location[4] = "Mortimer";
-            location[5] = "Union";
-            location[6] = "Thompson";
-            location[7] = "Townhomes";
-            location[8] = "Tuttle";
-            location[9] = "Welcome Center";
+            Object[] location = new Object[7];
+            location[0] = "Benedict Hall";
+            location[1] = "Harmon Hall";
+            location[2] = "McFarlane Hall";
+            location[3] = "Mortimer Hall";
+            location[4] = "Student Union";
+            location[5] = "Thompson Hall";
+            location[6] = "Welcome Center";
             LocationComboBox.Items.AddRange(location);
 
             Object[] physical = new Object[2];
@@ -81,8 +75,8 @@ namespace BicycleRentalWPF
             PhysicalConditionComboBox.Items.AddRange(physical);
 
             Object[] status = new Object[2];
-            status[0] = "Active";
-            status[1] = "Inactive";
+            status[0] = "Available";
+            status[1] = "Unavailable";
             StatusComboBox.Items.AddRange(status);
 
             
@@ -110,17 +104,14 @@ namespace BicycleRentalWPF
             myCaller = df;
             mainMenu = m;
 
-            Object[] location = new Object[10];
-            location[0] = "Benedict";
-            location[1] = "Brockway";
-            location[2] = "Harmon";
-            location[3] = "McFarlane";
-            location[4] = "Mortimer";
-            location[5] = "Union";
-            location[6] = "Thompson";
-            location[7] = "Townhomes";
-            location[8] = "Tuttle";
-            location[9] = "Welcome Center";
+            Object[] location = new Object[7];
+            location[0] = "Benedict Hall";
+            location[1] = "Harmon Hall";
+            location[2] = "McFarlane Hall";
+            location[3] = "Mortimer Hall";
+            location[4] = "Student Union";
+            location[5] = "Thompson Hall";
+            location[6] = "Welcome Center";
             LocationComboBox.Items.AddRange(location);
 
             Object[] physical = new Object[2];
@@ -129,14 +120,14 @@ namespace BicycleRentalWPF
             PhysicalConditionComboBox.Items.AddRange(physical);
 
             Object[] status = new Object[2];
-            status[0] = "Active";
-            status[1] = "Inactive";
+            status[0] = "Available";
+            status[1] = "Unavailable";
             StatusComboBox.Items.AddRange(status);
 
             Vehicle existingVehicle = new Vehicle();
 
             existingVehicle.populate(i);
-            BicycleDataInputFormTitle.Text = "Click SUBMIT to delete";
+            BicycleDataInputFormTitle.Text = "Are you sure? Click submit to delete this Bicycle";
             BikeMakeBox.Text = existingVehicle.BikeMake;
             ModelNumberBox.Text = existingVehicle.ModelNumber;
             SerialNumberBox.Text = existingVehicle.SerialNumber;

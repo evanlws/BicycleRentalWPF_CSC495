@@ -39,12 +39,12 @@
       // 
       this.ObjectIdLabel.AutoSize = true;
       this.ObjectIdLabel.BackColor = System.Drawing.Color.Transparent;
-      this.ObjectIdLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.ObjectIdLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.ObjectIdLabel.ForeColor = System.Drawing.Color.Black;
-      this.ObjectIdLabel.Location = new System.Drawing.Point(114, 46);
+      this.ObjectIdLabel.Location = new System.Drawing.Point(15, 26);
       this.ObjectIdLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
       this.ObjectIdLabel.Name = "ObjectIdLabel";
-      this.ObjectIdLabel.Size = new System.Drawing.Size(288, 22);
+      this.ObjectIdLabel.Size = new System.Drawing.Size(305, 22);
       this.ObjectIdLabel.TabIndex = 0;
       this.ObjectIdLabel.Text = "Enter ID of Object to be Updated";
       // 

@@ -41,12 +41,12 @@
       // 
       this.FormTitle.AutoSize = true;
       this.FormTitle.BackColor = System.Drawing.Color.Transparent;
-      this.FormTitle.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.FormTitle.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.FormTitle.ForeColor = System.Drawing.Color.Black;
-      this.FormTitle.Location = new System.Drawing.Point(259, 48);
+      this.FormTitle.Location = new System.Drawing.Point(15, 32);
       this.FormTitle.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
       this.FormTitle.Name = "FormTitle";
-      this.FormTitle.Size = new System.Drawing.Size(132, 22);
+      this.FormTitle.Size = new System.Drawing.Size(141, 22);
       this.FormTitle.TabIndex = 0;
       this.FormTitle.Text = "Rent A Bicycle";
       // 
@@ -56,7 +56,7 @@
       this.EnterIdLabel.BackColor = System.Drawing.Color.Transparent;
       this.EnterIdLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.EnterIdLabel.ForeColor = System.Drawing.Color.Black;
-      this.EnterIdLabel.Location = new System.Drawing.Point(101, 135);
+      this.EnterIdLabel.Location = new System.Drawing.Point(49, 81);
       this.EnterIdLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
       this.EnterIdLabel.Name = "EnterIdLabel";
       this.EnterIdLabel.Size = new System.Drawing.Size(212, 22);
@@ -66,7 +66,7 @@
       // BannerIDBox
       // 
       this.BannerIDBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(29)))), ((int)(((byte)(18)))));
-      this.BannerIDBox.Location = new System.Drawing.Point(365, 131);
+      this.BannerIDBox.Location = new System.Drawing.Point(313, 77);
       this.BannerIDBox.Margin = new System.Windows.Forms.Padding(6);
       this.BannerIDBox.Name = "BannerIDBox";
       this.BannerIDBox.Size = new System.Drawing.Size(219, 29);
@@ -79,7 +79,7 @@
       this.ChooseBicycleLabel.BackColor = System.Drawing.Color.Transparent;
       this.ChooseBicycleLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.ChooseBicycleLabel.ForeColor = System.Drawing.Color.Black;
-      this.ChooseBicycleLabel.Location = new System.Drawing.Point(101, 207);
+      this.ChooseBicycleLabel.Location = new System.Drawing.Point(49, 153);
       this.ChooseBicycleLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
       this.ChooseBicycleLabel.Name = "ChooseBicycleLabel";
       this.ChooseBicycleLabel.Size = new System.Drawing.Size(148, 22);
@@ -90,7 +90,7 @@
       // 
       this.ChooseBicycleComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(29)))), ((int)(((byte)(18)))));
       this.ChooseBicycleComboBox.FormattingEnabled = true;
-      this.ChooseBicycleComboBox.Location = new System.Drawing.Point(365, 203);
+      this.ChooseBicycleComboBox.Location = new System.Drawing.Point(313, 149);
       this.ChooseBicycleComboBox.Margin = new System.Windows.Forms.Padding(6);
       this.ChooseBicycleComboBox.Name = "ChooseBicycleComboBox";
       this.ChooseBicycleComboBox.Size = new System.Drawing.Size(219, 32);
@@ -101,7 +101,7 @@
       this.BackButton.BackColor = System.Drawing.Color.Transparent;
       this.BackButton.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.BackButton.ForeColor = System.Drawing.Color.Black;
-      this.BackButton.Location = new System.Drawing.Point(167, 319);
+      this.BackButton.Location = new System.Drawing.Point(113, 223);
       this.BackButton.Margin = new System.Windows.Forms.Padding(6);
       this.BackButton.Name = "BackButton";
       this.BackButton.Size = new System.Drawing.Size(138, 42);
@@ -115,7 +115,7 @@
       this.SubmitButton.BackColor = System.Drawing.Color.Transparent;
       this.SubmitButton.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.SubmitButton.ForeColor = System.Drawing.Color.Black;
-      this.SubmitButton.Location = new System.Drawing.Point(400, 319);
+      this.SubmitButton.Location = new System.Drawing.Point(346, 223);
       this.SubmitButton.Margin = new System.Windows.Forms.Padding(6);
       this.SubmitButton.Name = "SubmitButton";
       this.SubmitButton.Size = new System.Drawing.Size(138, 42);
@@ -129,7 +129,7 @@
       this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.BackColor = System.Drawing.Color.White;
-      this.ClientSize = new System.Drawing.Size(669, 415);
+      this.ClientSize = new System.Drawing.Size(589, 301);
       this.Controls.Add(this.SubmitButton);
       this.Controls.Add(this.BackButton);
       this.Controls.Add(this.ChooseBicycleComboBox);
