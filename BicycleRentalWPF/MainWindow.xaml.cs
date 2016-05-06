@@ -27,31 +27,31 @@ namespace BicycleRentalWPF
       InitializeComponent();
     }
 
+    //exits the program
     private void exitButtonClicked(object sender, RoutedEventArgs e)
     {
       System.Environment.Exit(0);
     }
 
-    private void Button_Click(object sender, RoutedEventArgs e)
+    //checks user name and password entered and continues to main menu if correct
+    private void submitButtonClicked(object sender, RoutedEventArgs e)
     {
       string bannerId = BannerIDTextBox.Text;
-      string password = PasswordBox.Password;
-      Worker worker = new Worker();
+      string pwd = PasswordBox.Password;
+      Worker currentWorker = new Worker();
+      currentWorker.populateBannerID(bannerId);
 
-      worker.populateBannerId(bannerId);
-
-      if (!(password.Equals(worker.getCredential())))
+      if (!(pwd.Equals(currentWorker.getCredential())))
+      {
+        MessageBox.Show("Incorrect password, please try again");
+      }
+      else
       {
         this.Hide();
         mainMenu mm = new mainMenu();
         mm.Show();
       }
-      else
-      {
-        MessageBox.Show("Incorrect password or BannerID");
-      }
-
-
     }
+ 
   }
 }

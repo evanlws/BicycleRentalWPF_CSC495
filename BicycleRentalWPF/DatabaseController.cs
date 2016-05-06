@@ -11,7 +11,7 @@ namespace BicycleRentalWPF
     {
         System.Data.OleDb.OleDbConnection conn;
         OleDbCommand command;
-        bool flag;
+        //bool flag;
         public DatabaseController()
         {
             conn = new System.Data.OleDb.OleDbConnection();
@@ -29,10 +29,10 @@ namespace BicycleRentalWPF
             if (reader.Read())
             {
                 conn.Close();
-                flag = true;
+                //flag = true;
             }
 
-            flag = false;
+            //flag = false;
         }
 
 
@@ -44,10 +44,10 @@ namespace BicycleRentalWPF
             if (reader.Read())
             {
                 conn.Close();
-                flag = true;
+                //flag = true;
             }
 
-            flag = false;
+           // flag = false;
         }
     }
 }

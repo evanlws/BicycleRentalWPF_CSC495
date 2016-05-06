@@ -8,49 +8,48 @@ namespace BicycleRentalWPF
 {
   public class Worker : Persistable
   {
-    private int ID { get; set; }
-    private string BannerID { get; set; }
-    private string FirstName { get; set; }
-    private string LastName { get; set; }
-    private string PhoneNumber { get; set; }
-    private string EmailAddress { get; set; }
-    private string Credential { get; set; }
-    private string InitialRegistrationDate { get; set; }
-    private string Notes { get; set; }
-    private string Status { get; set; }
-    private string DateStatusUpdated { get; set; }
+    public int ID { get; set; }
+    public string BannerId { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public string PhoneNumber { get; set; }
+    public string EmailAddress { get; set; }
+    public string Credential { get; set; }
+    public string InitialRegistrationDate { get; set; }
+    public string Notes { get; set; }
+    public string Status { get; set; }
+    public string DateStatusUpdated { get; set; }
 
+    //constructor 
     public Worker()
-      : base() // call parent default constructor
-    {
-      connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;" +
-          @"Data source=..\BicycleRental.accdb";
-    }
-    //------------------------------------------------------------------
-    public Worker(string bannerId, string firstName, string lastName, string phoneNumber, string emailAddress, string credential, string dateOfInitialRegistration, string notes, string status, string dateStatusUpdated)
       : base()
     {
       connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;" +
           @"Data source=..\BicycleRental.accdb";
-
-      this.BannerID = bannerId;
+    }
+    //constructor
+    public Worker(string bannerID, string firstName, string lastName, string phoneNumber,
+        string emailAddress, string credentials, string notes)
+      : base()
+    {
+      connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;" +
+          @"Data source=..\BicycleRental.accdb";
+      this.BannerId = bannerID;
       this.FirstName = firstName;
       this.LastName = lastName;
       this.PhoneNumber = phoneNumber;
       this.EmailAddress = emailAddress;
-      this.Credential = credential;
-      this.InitialRegistrationDate = dateOfInitialRegistration;
+      this.Credential = credentials;
+      this.InitialRegistrationDate = DateTime.Now.ToString("yyyy-MM-dd");
       this.Notes = notes;
-      this.Status = status;
-      this.DateStatusUpdated = dateStatusUpdated;
+      this.Status = "Active";
+      this.DateStatusUpdated = DateTime.Now.ToString("yyyy-MM-dd");
 
     }
 
-    //------------------------------------------------------------------
-    public void populate(int Id)
+    //populate helper
+    private void populateHelper(List<Object> results)
     {
-      string queryString = "SELECT * FROM Worker WHERE (ID = " + Id + ")";
-      List<Object> results = getValues(queryString);
       if (results != null)
       {
         foreach (object result in results)
@@ -61,82 +60,54 @@ namespace BicycleRentalWPF
           {
             // DEBUG Console.WriteLine(rowValue);
             if (count == 0)
-              ID = Convert.ToInt32(rowValue);
+              this.ID = Convert.ToInt32(rowValue);
             else if (count == 1)
-              BannerID = Convert.ToString(rowValue);
+              this.BannerId = Convert.ToString(rowValue);
             else if (count == 2)
-              FirstName = Convert.ToString(rowValue);
+              this.FirstName = Convert.ToString(rowValue);
             else if (count == 3)
-              LastName = Convert.ToString(rowValue);
+              this.LastName = Convert.ToString(rowValue);
             else if (count == 4)
-              PhoneNumber = Convert.ToString(rowValue);
+              this.PhoneNumber = Convert.ToString(rowValue);
             else if (count == 5)
-              EmailAddress = Convert.ToString(rowValue);
+              this.EmailAddress = Convert.ToString(rowValue);
             else if (count == 6)
-              Credential = Convert.ToString(rowValue);
+              this.Credential = Convert.ToString(rowValue);
             else if (count == 7)
-              InitialRegistrationDate = Convert.ToString(rowValue);
+              this.InitialRegistrationDate = Convert.ToString(rowValue);
+            else if (count == 8)
+              this.Notes = Convert.ToString(rowValue);
             else if (count == 9)
-              Notes = Convert.ToString(rowValue);
+              this.Status = Convert.ToString(rowValue);
             else if (count == 10)
-              Status = Convert.ToString(rowValue);
-            else if (count == 11)
-              DateStatusUpdated = Convert.ToString(rowValue);
+              this.DateStatusUpdated = Convert.ToString(rowValue);
             count = count + 1;
           }
         }
       }
     }
-
-    public void populateBannerId(string bannerId)
+    //populates worker object
+    public void populate(int ID)
     {
-      string queryString = "SELECT * FROM Worker WHERE (BannerId = '" + bannerId + "')";
+      string queryString = "SELECT * FROM Worker WHERE (ID = " + ID + ")";
       List<Object> results = getValues(queryString);
-      if (results != null)
-      {
-        foreach (object result in results)
-        {
-          IEnumerable<Object> row = result as IEnumerable<Object>;
-          int count = 0;
-          foreach (object rowValue in row)
-          {
-            // DEBUG Console.WriteLine(rowValue);
-            if (count == 0)
-              ID = Convert.ToInt32(rowValue);
-            else if (count == 1)
-              BannerID = Convert.ToString(rowValue);
-            else if (count == 2)
-              FirstName = Convert.ToString(rowValue);
-            else if (count == 3)
-              LastName = Convert.ToString(rowValue);
-            else if (count == 4)
-              PhoneNumber = Convert.ToString(rowValue);
-            else if (count == 5)
-              EmailAddress = Convert.ToString(rowValue);
-            else if (count == 6)
-              Credential = Convert.ToString(rowValue);
-            else if (count == 7)
-              InitialRegistrationDate = Convert.ToString(rowValue);
-            else if (count == 9)
-              Notes = Convert.ToString(rowValue);
-            else if (count == 10)
-              Status = Convert.ToString(rowValue);
-            else if (count == 11)
-              DateStatusUpdated = Convert.ToString(rowValue);
-            count = count + 1;
-          }
-        }
-      }
+      populateHelper(results);
+    }
+    //populate with bannerID
+    public void populateBannerID(string ID)
+    {
+      string queryString = "SELECT * FROM Worker WHERE (BannerId = '" + ID + "')";
+      List<Object> results = getValues(queryString);
+      populateHelper(results);
     }
 
+    //inserts worker into worker table
     public void insert()
     {
-
-      InitialRegistrationDate = DateTime.Now.ToString("yyyy-MM-dd");
       string insertQuery =
-      "INSERT INTO [Worker] (BannerID, FirstName, LastName, PhoneNumber, EmailAddress, Credential, InitialRegistrationDate, Notes, Status, DateStatusUpdated) " +
+      "INSERT INTO Worker (BannerId, FirstName, LastName, PhoneNumber, EmailAddress, Credential, InitialRegistrationDate, Notes, Status, DateStatusUpdated) " +
       "VALUES (" +
-      "'" + this.BannerID + "', '" +
+      "'" + this.BannerId + "', '" +
       this.FirstName + "', '" +
       this.LastName + "', '" +
       this.PhoneNumber + "', '" +
@@ -146,6 +117,7 @@ namespace BicycleRentalWPF
       this.Notes + "', '" +
       this.Status + "', '" +
       this.DateStatusUpdated + "')";
+
       int returnCode = modifyDatabase(insertQuery);
       if (returnCode != 0)
       {
@@ -165,29 +137,29 @@ namespace BicycleRentalWPF
             foreach (object rowValue in row)
             {
               // DEBUG Console.WriteLine("Retrieved id = " + rowValue);
-              this.ID = Convert.ToInt32(rowValue);
+              this.BannerId = Convert.ToString(rowValue);
             }
           }
         }
       }
     }
 
+    //updates worker in Worker table
     public void update()
     {
-      DateStatusUpdated = DateTime.Now.ToString("yyyy-MM-dd");
       string updateQuery = "UPDATE Worker SET " +
-    " BannerId = '" + this.BannerID + "' ," +
-    " FirstName = '" + this.FirstName + "' ," +
-    " LastName = '" + this.LastName + "' ," +
-    " PhoneNumber = '" + this.PhoneNumber + "' ," +
-    " EmailAddress = '" + this.EmailAddress + "', " +
-    " Credential = '" + this.Credential + "', " +
-    " InitialRegistrationDate = '" + this.InitialRegistrationDate + "', " +
-    " Notes = '" + this.Notes + "', " +
-    " Status = '" + this.Status + "', " +
-    " DateStatusUpdated = '" + this.DateStatusUpdated + "' " +
-    " WHERE " +
-    " ID = " + this.ID;
+          " BannerId = '" + this.BannerId + "' ," +
+          " FirstName = '" + this.FirstName + "' ," +
+          " LastName = '" + this.LastName + "' , " +
+          " PhoneNumber = '" + this.PhoneNumber + "' ," +
+          " EmailAddress = '" + this.EmailAddress + "' ," +
+          " Credential = '" + this.Credential + "' ," +
+          " InitialRegistrationDate = '" + this.InitialRegistrationDate + "' ," +
+          " Notes = '" + this.Notes + "' ," +
+          " Status = '" + this.Status + "' ," +
+          " DateStatusUpdated = '" + this.DateStatusUpdated + "' " +
+          " WHERE " +
+          " ID = " + this.ID;
       Console.WriteLine(updateQuery);
       int returnCode = modifyDatabase(updateQuery);
       if (returnCode != 0)
@@ -196,6 +168,7 @@ namespace BicycleRentalWPF
         Console.WriteLine("Worker object successfully updated");
     }
 
+    //Deletes worker from worker table
     public void delete()
     {
       string deleteQuery = "DELETE FROM Worker WHERE " +
@@ -210,7 +183,7 @@ namespace BicycleRentalWPF
 
     public string getBannerId()
     {
-      return this.BannerID;
+      return this.BannerId;
     }
 
     public string getFirstName()
@@ -260,7 +233,7 @@ namespace BicycleRentalWPF
 
     public void setBannerId(string bannerId)
     {
-      this.BannerID = bannerId;
+      this.BannerId = bannerId;
     }
 
     public void setFirstName(string firstName)

@@ -14,49 +14,44 @@ using System.Windows.Shapes;
 
 namespace BicycleRentalWPF
 {
-    /// <summary>
-    /// Interaction logic for insertUser.xaml
-    /// </summary>
+
     public partial class insertUser : Window
     {
-        public insertUser()
+
+      Window myCaller;
+
+        public insertUser(mainMenu mm)
         {
             InitializeComponent();
+            myCaller = mm;
         }
 
         private void SubmitButton_Click(object sender, RoutedEventArgs e)
         {
-            //bool validData = false;
-            
-            User newUser = new User();
-            newUser.setBannerId(BannerIDTextBox.Text);
-            newUser.setFirstName(FirstNameTextBox.Text);
-            newUser.setLastName(LastNameTextBox.Text);
-            newUser.setPhoneNumber(PhoneNumberTextBox.Text);
-            newUser.setEmailAddress(EmailTextBox.Text);
-            newUser.setUserType(UserTypeComboBox.Text);
-            newUser.setNotes(NoteTextBox.Text);
-            newUser.setStatus(StatusComboBox.Text);
+          string bannerID = BannerIDTextBox.Text;
+          string firstName = FirstNameTextBox.Text;
+          string lastName = LastNameTextBox.Text;
+          string phoneNumber = PhoneNumberTextBox.Text;
+          string email = EmailTextBox.Text;
+          string userType = Convert.ToString(UserTypeComboBox.SelectedItem);
+          string notes = NoteTextBox.Text;
+          string status = Convert.ToString(StatusComboBox.SelectedItem);
+          string dateStatusUpdated = DateStatusUpdatedTextField.Text;
 
-            //newUser.insert();
-            //MessageBox.Show("New User Inserted");
+          User newUser = new User(bannerID, firstName, lastName, phoneNumber, email, userType, notes, status, dateStatusUpdated);
+          newUser.insert();
 
+          MessageBox.Show("User insert successful!");
 
-           // newUser.insert();
-            /*
-            //validData = DataValidation.ValidateInsertUser(newUser);
-            if (validData)
-            {
-                MessageBox.Show("Passed validation");
-            }
-            else
-                MessageBox.Show("fail validation");
-                */
+          this.Close();
+          myCaller.Show();
+
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            DialogResult = false;
+          this.Close();
+          myCaller.Show();
             
         }
     }
