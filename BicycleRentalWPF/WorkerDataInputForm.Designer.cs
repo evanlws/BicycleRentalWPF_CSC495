@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-      this.RyanC = new System.Windows.Forms.Label();
+      this.WorkerDataLabel = new System.Windows.Forms.Label();
       this.BannerID = new System.Windows.Forms.Label();
       this.FirstName = new System.Windows.Forms.Label();
       this.LastName = new System.Windows.Forms.Label();
@@ -47,22 +47,22 @@
       this.NotesBox = new System.Windows.Forms.TextBox();
       this.SubmitButton = new System.Windows.Forms.Button();
       this.BackButton = new System.Windows.Forms.Button();
-      this.CredentialComboBox = new System.Windows.Forms.ComboBox();
       this.StatusComboBox = new System.Windows.Forms.ComboBox();
+      this.credentialTextBox = new System.Windows.Forms.TextBox();
       this.SuspendLayout();
       // 
-      // RyanC
+      // WorkerDataLabel
       // 
-      this.RyanC.AutoSize = true;
-      this.RyanC.BackColor = System.Drawing.Color.Transparent;
-      this.RyanC.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.RyanC.ForeColor = System.Drawing.Color.Black;
-      this.RyanC.Location = new System.Drawing.Point(153, 28);
-      this.RyanC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-      this.RyanC.Name = "RyanC";
-      this.RyanC.Size = new System.Drawing.Size(208, 22);
-      this.RyanC.TabIndex = 0;
-      this.RyanC.Text = "Enter New Worker Data";
+      this.WorkerDataLabel.AutoSize = true;
+      this.WorkerDataLabel.BackColor = System.Drawing.Color.Transparent;
+      this.WorkerDataLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.WorkerDataLabel.ForeColor = System.Drawing.Color.Black;
+      this.WorkerDataLabel.Location = new System.Drawing.Point(194, 25);
+      this.WorkerDataLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+      this.WorkerDataLabel.Name = "WorkerDataLabel";
+      this.WorkerDataLabel.Size = new System.Drawing.Size(208, 22);
+      this.WorkerDataLabel.TabIndex = 0;
+      this.WorkerDataLabel.Text = "Enter New Worker Data";
       // 
       // BannerID
       // 
@@ -273,15 +273,6 @@
       this.BackButton.UseVisualStyleBackColor = false;
       this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
       // 
-      // CredentialComboBox
-      // 
-      this.CredentialComboBox.FormattingEnabled = true;
-      this.CredentialComboBox.Location = new System.Drawing.Point(300, 286);
-      this.CredentialComboBox.Margin = new System.Windows.Forms.Padding(6);
-      this.CredentialComboBox.Name = "CredentialComboBox";
-      this.CredentialComboBox.Size = new System.Drawing.Size(230, 32);
-      this.CredentialComboBox.TabIndex = 25;
-      // 
       // StatusComboBox
       // 
       this.StatusComboBox.FormattingEnabled = true;
@@ -291,14 +282,23 @@
       this.StatusComboBox.Size = new System.Drawing.Size(230, 32);
       this.StatusComboBox.TabIndex = 26;
       // 
+      // credentialTextBox
+      // 
+      this.credentialTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(19)))), ((int)(((byte)(11)))));
+      this.credentialTextBox.Location = new System.Drawing.Point(300, 287);
+      this.credentialTextBox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+      this.credentialTextBox.Name = "credentialTextBox";
+      this.credentialTextBox.Size = new System.Drawing.Size(230, 29);
+      this.credentialTextBox.TabIndex = 27;
+      // 
       // WorkerDataInputForm
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.BackColor = System.Drawing.Color.White;
       this.ClientSize = new System.Drawing.Size(563, 585);
+      this.Controls.Add(this.credentialTextBox);
       this.Controls.Add(this.StatusComboBox);
-      this.Controls.Add(this.CredentialComboBox);
       this.Controls.Add(this.BackButton);
       this.Controls.Add(this.SubmitButton);
       this.Controls.Add(this.NotesBox);
@@ -317,7 +317,7 @@
       this.Controls.Add(this.LastName);
       this.Controls.Add(this.FirstName);
       this.Controls.Add(this.BannerID);
-      this.Controls.Add(this.RyanC);
+      this.Controls.Add(this.WorkerDataLabel);
       this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
       this.Name = "WorkerDataInputForm";
@@ -329,7 +329,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label RyanC;
+        private System.Windows.Forms.Label WorkerDataLabel;
         private System.Windows.Forms.Label BannerID;
         private System.Windows.Forms.Label FirstName;
         private System.Windows.Forms.Label LastName;
@@ -348,7 +348,7 @@
         private System.Windows.Forms.TextBox NotesBox;
         private System.Windows.Forms.Button SubmitButton;
         private System.Windows.Forms.Button BackButton;
-        private System.Windows.Forms.ComboBox CredentialComboBox;
         private System.Windows.Forms.ComboBox StatusComboBox;
+        private System.Windows.Forms.TextBox credentialTextBox;
     }
 }

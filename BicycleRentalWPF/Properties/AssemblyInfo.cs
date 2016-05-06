@@ -10,9 +10,9 @@ using System.Windows;
 [assembly: AssemblyTitle("BicycleRentalWPF")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Evan Lewis inc")]
 [assembly: AssemblyProduct("BicycleRentalWPF")]
-[assembly: AssemblyCopyright("Copyright ©  2015")]
+[assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

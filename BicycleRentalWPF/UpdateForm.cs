@@ -21,15 +21,15 @@ namespace BicycleRentalWPF
             InitializeComponent();
             if (s.Equals("modifyUser"))
             {
-                Julianne.Text = "Enter BannerID of the user";
+                ObjectIdLabel.Text = "Enter BannerID of the user";
             }
             if (s.Equals("modifyWorker"))
             {
-                Julianne.Text = "Enter BannerID of the Worker";
+                ObjectIdLabel.Text = "Enter BannerID of the Worker";
             }
             if (s.Equals("modifyBicycle"))
             {
-                Julianne.Text = "Enter BycycleID of the Bike";
+                ObjectIdLabel.Text = "Enter BycycleID of the Bike";
             }
             myCaller = m;
             dataToModify = s;

@@ -15,7 +15,7 @@ namespace BicycleRentalWPF
         Form myCaller;
         MainMenu mainMenu;
         int id;
-        string InteractionState;
+        string FormAction;
 
         public BicycleDataInputForm(MainMenu mm)
         {
@@ -50,7 +50,7 @@ namespace BicycleRentalWPF
 
             StatusComboBox.SelectedIndex = 0;
 
-            InteractionState = "Insert";
+            FormAction = "Insert";
         }
 
         public BicycleDataInputForm(UpdateForm uf, int i, MainMenu mm)
@@ -100,7 +100,7 @@ namespace BicycleRentalWPF
             NotesBox.Text = existingVehicle.Notes;
             StatusComboBox.SelectedIndex = StatusComboBox.FindStringExact(existingVehicle.Status);
            
-            InteractionState = "update";
+            FormAction = "update";
             id = i;
         }
 
@@ -147,13 +147,13 @@ namespace BicycleRentalWPF
             NotesBox.Text = existingVehicle.Notes;
             StatusComboBox.SelectedIndex = StatusComboBox.FindStringExact(existingVehicle.Status);
 
-            InteractionState = "delete";
+            FormAction = "delete";
             id = i;
         }
 
         private void SubmitButton_Click(object sender, EventArgs e)
         {
-            if (InteractionState.Equals("insert"))
+            if (FormAction.Equals("insert"))
             {
                 string bikeMake = BikeMakeBox.Text;
                 string modelNumber = ModelNumberBox.Text;
@@ -174,7 +174,7 @@ namespace BicycleRentalWPF
                 this.Hide();
                 myCaller.Show();
             }
-            else if(InteractionState.Equals("update"))
+            else if(FormAction.Equals("update"))
             {
                 Vehicle existingVehicle = new Vehicle();
                 existingVehicle.populate(id);
@@ -196,7 +196,7 @@ namespace BicycleRentalWPF
                 this.Hide();
                 mainMenu.Show();
             }
-            else if (InteractionState.Equals("delete"))
+            else if (FormAction.Equals("delete"))
             {
                 Vehicle existingVehicle = new Vehicle();
                 existingVehicle.populate(id);

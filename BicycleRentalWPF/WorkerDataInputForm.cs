@@ -23,12 +23,7 @@ namespace BicycleRentalWPF
             myCaller = m;
             WorkerPasswordBox.PasswordChar = '*';
             FormAction = "insert";
-            RyanC.Text = "Enter new Worker data";
-
-            Object[] credential = new Object[2];
-            credential[0] = "Faculty/Staff";
-            credential[1] = "Student";
-            CredentialComboBox.Items.AddRange(credential);
+            WorkerDataLabel.Text = "Enter new Worker data";
 
             Object[] status = new Object[2];
             status[0] = "Active";
@@ -46,11 +41,6 @@ namespace BicycleRentalWPF
             mainMenu = m;
             WorkerPasswordBox.PasswordChar = '*';
 
-            Object[] credential = new Object[2];
-            credential[0] = "Faculty/Staff";
-            credential[1] = "Student";
-            CredentialComboBox.Items.AddRange(credential);
-
             Object[] status = new Object[2];
             status[0] = "Active";
             status[1] = "Inactive";
@@ -59,13 +49,12 @@ namespace BicycleRentalWPF
             Worker existingWorker = new Worker();
 
             existingWorker.populateBannerID(s);
-            RyanC.Text = "Modify Worker Data";
+            WorkerDataLabel.Text = "Modify Worker Data";
             BannerIDBox.Text = existingWorker.BannerID;
             FirstNameBox.Text = existingWorker.FirstName;
             LastNameBox.Text = existingWorker.LastName;
             PhoneNumberBox.Text = existingWorker.PhoneNumber;
             EmailBox.Text = existingWorker.EmailAddress;
-            CredentialComboBox.SelectedIndex = CredentialComboBox.FindStringExact(existingWorker.Credential);
             WorkerPasswordBox.Text = existingWorker.WorkerPassword;
             NotesBox.Text = existingWorker.Notes;
             StatusComboBox.SelectedIndex = StatusComboBox.FindStringExact(existingWorker.Status);
@@ -79,13 +68,8 @@ namespace BicycleRentalWPF
             InitializeComponent();
             myCaller = df;
             mainMenu = m;
-            RyanC.Text = "Hit submit to confirm deletion";
+            WorkerDataLabel.Text = "Hit submit to confirm deletion";
             WorkerPasswordBox.PasswordChar = '*';
-
-            Object[] credential = new Object[2];
-            credential[0] = "Faculty/Staff";
-            credential[1] = "Student";
-            CredentialComboBox.Items.AddRange(credential);
 
             Object[] status = new Object[2];
             status[0] = "Active";
@@ -121,7 +105,7 @@ namespace BicycleRentalWPF
                 string lastName = LastNameBox.Text;
                 string phoneNumber = PhoneNumberBox.Text;
                 string email = EmailBox.Text;
-                string credential = Convert.ToString(CredentialComboBox.SelectedItem);
+                string credential = credentialTextBox.Text;
                 string workerPassword = WorkerPasswordBox.Text;
                 string notes = NotesBox.Text;
                 string status = Convert.ToString(StatusComboBox.SelectedItem);
@@ -145,7 +129,7 @@ namespace BicycleRentalWPF
                 existingWorker.LastName = LastNameBox.Text;
                 existingWorker.PhoneNumber = PhoneNumberBox.Text;
                 existingWorker.EmailAddress = EmailBox.Text;
-                existingWorker.Credential = Convert.ToString(CredentialComboBox.SelectedItem);
+                existingWorker.Credential = credentialTextBox.Text;
                 existingWorker.WorkerPassword = WorkerPasswordBox.Text;
                 existingWorker.Notes = NotesBox.Text;
                 existingWorker.Status = Convert.ToString(StatusComboBox.SelectedItem);

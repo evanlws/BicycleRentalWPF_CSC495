@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-      this.IHateMitra = new System.Windows.Forms.Label();
-      this.Menu = new System.Windows.Forms.Label();
+      this.MainTitleLabel = new System.Windows.Forms.Label();
+      this.MenuLabel = new System.Windows.Forms.Label();
       this.InsertWorkerButton = new System.Windows.Forms.Button();
       this.InsertBicycleButton = new System.Windows.Forms.Button();
       this.ModifyUserButton = new System.Windows.Forms.Button();
@@ -45,31 +45,31 @@
       this.InsertUserButton = new System.Windows.Forms.Button();
       this.SuspendLayout();
       // 
-      // IHateMitra
+      // MainTitleLabel
       // 
-      this.IHateMitra.AutoSize = true;
-      this.IHateMitra.BackColor = System.Drawing.Color.Transparent;
-      this.IHateMitra.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.IHateMitra.ForeColor = System.Drawing.Color.Black;
-      this.IHateMitra.Location = new System.Drawing.Point(169, 25);
-      this.IHateMitra.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-      this.IHateMitra.Name = "IHateMitra";
-      this.IHateMitra.Size = new System.Drawing.Size(286, 22);
-      this.IHateMitra.TabIndex = 0;
-      this.IHateMitra.Text = "Brockport Bicycle Rental System";
+      this.MainTitleLabel.AutoSize = true;
+      this.MainTitleLabel.BackColor = System.Drawing.Color.Transparent;
+      this.MainTitleLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.MainTitleLabel.ForeColor = System.Drawing.Color.Black;
+      this.MainTitleLabel.Location = new System.Drawing.Point(169, 25);
+      this.MainTitleLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+      this.MainTitleLabel.Name = "MainTitleLabel";
+      this.MainTitleLabel.Size = new System.Drawing.Size(286, 22);
+      this.MainTitleLabel.TabIndex = 0;
+      this.MainTitleLabel.Text = "Brockport Bicycle Rental System";
       // 
-      // Menu
+      // MenuLabel
       // 
-      this.Menu.AutoSize = true;
-      this.Menu.BackColor = System.Drawing.Color.Transparent;
-      this.Menu.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.Menu.ForeColor = System.Drawing.Color.Black;
-      this.Menu.Location = new System.Drawing.Point(262, 58);
-      this.Menu.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-      this.Menu.Name = "Menu";
-      this.Menu.Size = new System.Drawing.Size(100, 22);
-      this.Menu.TabIndex = 1;
-      this.Menu.Text = "Main Menu";
+      this.MenuLabel.AutoSize = true;
+      this.MenuLabel.BackColor = System.Drawing.Color.Transparent;
+      this.MenuLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.MenuLabel.ForeColor = System.Drawing.Color.Black;
+      this.MenuLabel.Location = new System.Drawing.Point(262, 58);
+      this.MenuLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+      this.MenuLabel.Name = "MenuLabel";
+      this.MenuLabel.Size = new System.Drawing.Size(100, 22);
+      this.MenuLabel.TabIndex = 1;
+      this.MenuLabel.Text = "Main Menu";
       // 
       // InsertWorkerButton
       // 
@@ -270,8 +270,8 @@
       this.Controls.Add(this.ModifyUserButton);
       this.Controls.Add(this.InsertBicycleButton);
       this.Controls.Add(this.InsertWorkerButton);
-      this.Controls.Add(this.Menu);
-      this.Controls.Add(this.IHateMitra);
+      this.Controls.Add(this.MenuLabel);
+      this.Controls.Add(this.MainTitleLabel);
       this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(29)))), ((int)(((byte)(18)))));
       this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
@@ -284,9 +284,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Label IHateMitra;
-        private System.Windows.Forms.Label Menu;
-        //private System.Windows.Forms.Button InsertUserButton;
+        private System.Windows.Forms.Label MainTitleLabel;
+        private System.Windows.Forms.Label MenuLabel;
         private System.Windows.Forms.Button InsertWorkerButton;
         private System.Windows.Forms.Button InsertBicycleButton;
         private System.Windows.Forms.Button ModifyWorkerButton;

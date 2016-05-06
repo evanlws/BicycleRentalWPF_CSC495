@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-      this.JeffMitchell = new System.Windows.Forms.Label();
+      this.UserDataLabel = new System.Windows.Forms.Label();
       this.BannerID = new System.Windows.Forms.Label();
       this.FirstName = new System.Windows.Forms.Label();
       this.LastName = new System.Windows.Forms.Label();
@@ -49,18 +49,18 @@
       this.StatusComboBox = new System.Windows.Forms.ComboBox();
       this.SuspendLayout();
       // 
-      // JeffMitchell
+      // UserDataLabel
       // 
-      this.JeffMitchell.AutoSize = true;
-      this.JeffMitchell.BackColor = System.Drawing.Color.Transparent;
-      this.JeffMitchell.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.JeffMitchell.ForeColor = System.Drawing.Color.Black;
-      this.JeffMitchell.Location = new System.Drawing.Point(190, 15);
-      this.JeffMitchell.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-      this.JeffMitchell.Name = "JeffMitchell";
-      this.JeffMitchell.Size = new System.Drawing.Size(186, 22);
-      this.JeffMitchell.TabIndex = 0;
-      this.JeffMitchell.Text = "Enter New User Data";
+      this.UserDataLabel.AutoSize = true;
+      this.UserDataLabel.BackColor = System.Drawing.Color.Transparent;
+      this.UserDataLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.UserDataLabel.ForeColor = System.Drawing.Color.Black;
+      this.UserDataLabel.Location = new System.Drawing.Point(220, 9);
+      this.UserDataLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+      this.UserDataLabel.Name = "UserDataLabel";
+      this.UserDataLabel.Size = new System.Drawing.Size(186, 22);
+      this.UserDataLabel.TabIndex = 0;
+      this.UserDataLabel.Text = "Enter New User Data";
       // 
       // BannerID
       // 
@@ -290,7 +290,7 @@
       this.Controls.Add(this.LastName);
       this.Controls.Add(this.FirstName);
       this.Controls.Add(this.BannerID);
-      this.Controls.Add(this.JeffMitchell);
+      this.Controls.Add(this.UserDataLabel);
       this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.ForeColor = System.Drawing.Color.White;
       this.Margin = new System.Windows.Forms.Padding(6);
@@ -304,7 +304,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label JeffMitchell;
+        private System.Windows.Forms.Label UserDataLabel;
         private System.Windows.Forms.Label BannerID;
         private System.Windows.Forms.Label FirstName;
         private System.Windows.Forms.Label LastName;

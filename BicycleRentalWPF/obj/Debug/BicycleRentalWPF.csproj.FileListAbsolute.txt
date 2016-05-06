@@ -77,7 +77,6 @@ C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalW
 C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.g.resources
 C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.BicycleDataInputForm.resources
 C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.DeleteForm.resources
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.MainMenuForm1.resources
 C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.Properties.Resources.resources
 C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.RentABicycleForm.resources
 C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.ReturnBicycleForm.resources
@@ -85,3 +84,4 @@ C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalW
 C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.UserDataInputForm.resources
 C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.WorkerDataInputForm.resources
 C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.csproj.GenerateResource.Cache
+C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.MainMenu.resources

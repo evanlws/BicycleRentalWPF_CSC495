@@ -33,12 +33,12 @@ namespace BicycleRentalWPF
 
         private void SubmitButton_Click(object sender, RoutedEventArgs e)
         {
-            string workerID = BannerIDBox.Text;
-            string pwd = PasswordBox1.Password;
+          string workerID = BannerIdTextBox.Text;
+          string pwd = PasswordTextBox.Password;
             Worker currentWorker = new Worker();
             currentWorker.populateBannerID(workerID);
 
-            if ( (pwd.Equals(currentWorker.WorkerPassword)))
+            if (!(pwd.Equals(currentWorker.WorkerPassword)))
             {
                 System.Windows.Forms.MessageBox.Show("Incorrect Password or BannerID");
             }

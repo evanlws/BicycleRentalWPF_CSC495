@@ -181,5 +181,7 @@ namespace BicycleRentalWPF
             else
                 Console.WriteLine("Worker object successfully deleted");
         }
+
+    
     }
 }

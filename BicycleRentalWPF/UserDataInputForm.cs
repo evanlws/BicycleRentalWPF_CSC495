@@ -15,15 +15,15 @@ namespace BicycleRentalWPF
         
         Form myCaller;
         MainMenu mainMenu;
-        string InteractionState;
+        string FormAction;
         string bannerID = " ";
 
         public UserDataInputForm(MainMenu m)
         {
             InitializeComponent();
             myCaller = m;
-            InteractionState = "nothing";
-            JeffMitchell.Text = "Enter new User data";
+            FormAction = "insert";
+            UserDataLabel.Text = "Enter new User data";
 
             
 
@@ -62,7 +62,7 @@ namespace BicycleRentalWPF
 
 
             existingUser.populateWithBannerID(s);
-            JeffMitchell.Text = "Modify User Data";
+            UserDataLabel.Text = "Modify User Data";
             BannerIDBox.Text = existingUser.BannerID;
             FirstNameBox.Text = existingUser.FirstName;
             LastNameBox.Text = existingUser.LastName;
@@ -73,7 +73,7 @@ namespace BicycleRentalWPF
             StatusComboBox.SelectedIndex = StatusComboBox.FindStringExact(existingUser.Status);
            
 
-            InteractionState = "update";
+            FormAction = "update";
             bannerID = s;
         }
 
@@ -81,7 +81,7 @@ namespace BicycleRentalWPF
         {
             InitializeComponent();
             myCaller = df;
-            JeffMitchell.Text = "Hit submit to confirm deletion";
+            UserDataLabel.Text = "Hit submit to confirm deletion";
             this.mainMenu = m;
             User existingUser = new User();
 
@@ -106,7 +106,7 @@ namespace BicycleRentalWPF
             NotesBox.Text = existingUser.Notes;
             StatusComboBox.SelectedIndex = StatusComboBox.FindStringExact(existingUser.Status);          
 
-            InteractionState = "delete";
+            FormAction = "delete";
             bannerID = s;
 
         }
@@ -114,7 +114,7 @@ namespace BicycleRentalWPF
         private void SubmitButton_Click(object sender, EventArgs e)
         {
 
-            if (InteractionState.Equals("nothing"))
+          if (FormAction.Equals("insert"))
             {
                 string bannerID = BannerIDBox.Text;
                 string firstName = FirstNameBox.Text;
@@ -137,7 +137,7 @@ namespace BicycleRentalWPF
                 
             }
 
-            else if(InteractionState.Equals("update"))
+            else if(FormAction.Equals("update"))
             {
                 User existingUser = new User();
                 existingUser.populateWithBannerID(bannerID);
@@ -160,7 +160,7 @@ namespace BicycleRentalWPF
                 mainMenu.Show();
 
             }
-            else if (InteractionState.Equals("delete"))
+            else if (FormAction.Equals("delete"))
             {
                 User existingUser = new User();
                 existingUser.populateWithBannerID(bannerID);

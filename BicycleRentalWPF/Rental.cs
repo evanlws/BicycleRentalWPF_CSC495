@@ -96,7 +96,7 @@ namespace BicycleRentalWPF
 
         public void populateWithNonReturnedRental(int bikeID)
         {
-            string queryString = "SELECT * FROM Rental WHERE (VehicleID = " + bikeID + ") AND (CheckInWorkerID = 0)";
+            string queryString = "SELECT * FROM Rental WHERE (VehicleID = " + bikeID + ") AND (CheckinWorkerID = 0)";
             List<Object> results = getValues(queryString);
             populateHelper(results);
         }
@@ -176,4 +176,5 @@ namespace BicycleRentalWPF
                 Console.WriteLine("Rental object successfully deleted");
         }
     }
+
 }
