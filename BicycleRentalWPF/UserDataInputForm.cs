@@ -180,5 +180,10 @@ namespace BicycleRentalWPF
             this.Hide();
             myCaller.Show();
         }
+
+        private void UserDataInputForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
