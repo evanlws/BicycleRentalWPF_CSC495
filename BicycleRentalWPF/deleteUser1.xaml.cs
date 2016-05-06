@@ -19,9 +19,12 @@ namespace BicycleRentalWPF
     /// </summary>
     public partial class deleteUser1 : Window
     {
-        public deleteUser1()
+      Window myCaller;
+
+        public deleteUser1(Window mm)
         {
-            InitializeComponent();
+          InitializeComponent();
+          myCaller = mm;
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)

@@ -35,15 +35,15 @@ namespace BicycleRentalWPF
 
     private void deleteUserButton_Click(object sender, RoutedEventArgs e)
     {
-      deleteUser1 deleteUserView = new deleteUser1();
+      deleteUser1 deleteUserView = new deleteUser1(this);
       this.Hide();
       deleteUserView.ShowDialog();
       this.Show();
     }
 
-    private void modifyUserButton_Click_1(object sender, RoutedEventArgs e)
+    private void modifyUserButton_Click(object sender, RoutedEventArgs e)
     {
-      modifyUser1 modifyUserView1 = new modifyUser1();
+      modifyUser1 modifyUserView1 = new modifyUser1(this);
       this.Hide();
       modifyUserView1.ShowDialog();
       this.Show();
@@ -51,7 +51,7 @@ namespace BicycleRentalWPF
 
     private void insertWorkerButton_Click(object sender, RoutedEventArgs e)
     {
-      insertWorker insertWorkerView = new insertWorker();
+      insertWorker insertWorkerView = new insertWorker(this);
       this.Hide();
       insertWorkerView.ShowDialog();
       this.Show();
@@ -59,7 +59,7 @@ namespace BicycleRentalWPF
 
     private void modifyWorkerButton_Click(object sender, RoutedEventArgs e)
     {
-      modifyWorker1 modifyWorker1View = new modifyWorker1();
+      modifyWorker1 modifyWorker1View = new modifyWorker1(this);
       this.Hide();
       modifyWorker1View.ShowDialog();
       this.Show();
@@ -67,7 +67,7 @@ namespace BicycleRentalWPF
 
     private void deleteWorkerButton_Click(object sender, RoutedEventArgs e)
     {
-      deleteWorker1 deleteWorker1View = new deleteWorker1();
+      deleteWorker1 deleteWorker1View = new deleteWorker1(this);
       this.Hide();
       deleteWorker1View.ShowDialog();
       this.Show();
@@ -76,7 +76,7 @@ namespace BicycleRentalWPF
 
     private void insertBicycleButton_Click(object sender, RoutedEventArgs e)
     {
-      insertVehicle insertVehicleView = new insertVehicle();
+      insertVehicle insertVehicleView = new insertVehicle(this);
       this.Hide();
       insertVehicleView.ShowDialog();
       this.Show();
@@ -84,7 +84,7 @@ namespace BicycleRentalWPF
 
     private void modifyBicycleButton_Click(object sender, RoutedEventArgs e)
     {
-      modifyVehicle1 modifyVehicle1View = new modifyVehicle1();
+      modifyVehicle1 modifyVehicle1View = new modifyVehicle1(this);
       this.Hide();
       modifyVehicle1View.ShowDialog();
       this.Show();
@@ -92,7 +92,7 @@ namespace BicycleRentalWPF
 
     private void deleteBicycleButton_Click(object sender, RoutedEventArgs e)
     {
-      deleteVehicle1 deleteVehicle1View = new deleteVehicle1();
+      deleteVehicle1 deleteVehicle1View = new deleteVehicle1(this);
       this.Hide();
       deleteVehicle1View.ShowDialog();
       this.Show();
@@ -100,7 +100,7 @@ namespace BicycleRentalWPF
 
     private void rentBicycleButton_Click(object sender, RoutedEventArgs e)
     {
-      rentVehicle rentBicycleView = new rentVehicle();
+      rentVehicle rentBicycleView = new rentVehicle(this);
       this.Hide();
       rentBicycleView.ShowDialog();
       this.Show();
@@ -109,18 +109,12 @@ namespace BicycleRentalWPF
 
     private void returnBicycleButton_Click(object sender, RoutedEventArgs e)
     {
-      returnVehicle returnVehicleView = new returnVehicle();
+      returnVehicle returnVehicleView = new returnVehicle(this);
       this.Hide();
       returnVehicleView.ShowDialog();
       this.Show();
 
     }
 
-    private void mainMenuBackButton_Click(object sender, RoutedEventArgs e)
-    {
-      LoginWindow loginScreen = new LoginWindow();
-      loginScreen.Show();
-      this.Close();
-    }
   }
 }

@@ -6,30 +6,31 @@
         xmlns:local="clr-namespace:BicycleRentalWPF"
         mc:Ignorable="d"
         Title="insertWorker" Height="523.037" Width="512.827">
-    <Grid>
-        <Label Content="Insert New Worker Information " Height="36" Margin="33,10,145,0" VerticalAlignment="Top" Width="322" FontSize="20" HorizontalAlignment="Center" FontWeight="Medium"/>
-        <Label x:Name="BannerIDLabel" Content="Banner ID" HorizontalAlignment="Left" Margin="33,80,0,0" VerticalAlignment="Top" Width="77"/>
-        <Label x:Name="FirstNameLabel" Content="First Name" HorizontalAlignment="Left" Margin="33,111,0,0" VerticalAlignment="Top" Width="77"/>
-        <Label x:Name="LastNameLabel" Content="Last Name" HorizontalAlignment="Left" Margin="33,143,0,0" VerticalAlignment="Top" Width="77"/>
-        <Label x:Name="EmailLabel" Content="Email" HorizontalAlignment="Left" Margin="33,205,0,0" VerticalAlignment="Top" Width="77"/>
-        <Label x:Name="PhoneNumberLabel" Content="Phone Number" HorizontalAlignment="Left" Margin="33,174,0,0" VerticalAlignment="Top" Width="93"/>
-        <Label x:Name="CredentialLabel" Content="Credential " HorizontalAlignment="Left" Margin="33,236,0,0" VerticalAlignment="Top" Width="77"/>
-        <Label x:Name="NoteLabel" Content="Initial Registration Date " HorizontalAlignment="Left" Margin="33,267,0,0" VerticalAlignment="Top" Width="139"/>
-        <Label x:Name="StatusLabel" Content="Worker Password" HorizontalAlignment="Left" Margin="33,298,0,0" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="DateStatusUpdateLabel" Content="Note" HorizontalAlignment="Left" Margin="33,329,0,0" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="BannerIDTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="213,84,0,0"/>
-        <TextBox x:Name="FirstNameTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="213,115,0,0"/>
-        <TextBox x:Name="LastNameTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="213,147,0,0"/>
-        <TextBox x:Name="PhoneNumberTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="213,178,0,0"/>
-        <TextBox x:Name="EmailTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="213,209,0,0"/>
-        <TextBox x:Name="UserTypeTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="213,239,0,0"/>
-        <TextBox x:Name="NoteTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="213,271,0,0"/>
-        <TextBox x:Name="StatusTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="213,302,0,0"/>
-        <TextBox x:Name="DateStatusUpdateTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="213,332,0,0"/>
-        <Button x:Name="BackButton" Content="Back" HorizontalAlignment="Left" Margin="106,425,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.317,-0.3" Height="20" Click="BackButton_Click"/>
-        <Button x:Name="SubmitButton" Content="Submit" HorizontalAlignment="Left" Margin="285,425,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.317,-0.3" Height="20" Click="SubmitButton_Click"/>
-        <Label x:Name="DateStatusUpdateLabel_Copy" Content="Status" HorizontalAlignment="Left" Margin="33,357,0,0" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="DateStatusUpdateTextBox_Copy" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="213,360,0,0"/>
+  <Grid>
+    <Label Content="Insert New Worker Information " Height="36" Margin="33,10,145,0" VerticalAlignment="Top" Width="322" FontSize="20" HorizontalAlignment="Center" FontWeight="Medium"/>
+    <Label x:Name="BannerIDLabel" Content="Banner ID" HorizontalAlignment="Left" Margin="33,80,0,0" VerticalAlignment="Top" Width="77"/>
+    <Label x:Name="FirstNameLabel" Content="First Name" HorizontalAlignment="Left" Margin="33,111,0,0" VerticalAlignment="Top" Width="77"/>
+    <Label x:Name="LastNameLabel" Content="Last Name" HorizontalAlignment="Left" Margin="33,143,0,0" VerticalAlignment="Top" Width="77"/>
+    <Label x:Name="EmailLabel" Content="Email" HorizontalAlignment="Left" Margin="33,205,0,0" VerticalAlignment="Top" Width="77"/>
+    <Label x:Name="PhoneNumberLabel" Content="Phone Number" HorizontalAlignment="Left" Margin="33,174,0,0" VerticalAlignment="Top" Width="93"/>
+    <Label x:Name="CredentialLabel" Content="Credential " HorizontalAlignment="Left" Margin="33,236,0,0" VerticalAlignment="Top" Width="77"/>
+    <Label x:Name="NoteLabel" Content="Initial Registration Date " HorizontalAlignment="Left" Margin="33,267,0,0" VerticalAlignment="Top" Width="139"/>
+    <Label x:Name="DateStatusUpdateLabel" Content="Note" HorizontalAlignment="Left" Margin="30,304,0,0" VerticalAlignment="Top" Width="120"/>
+    <TextBox x:Name="BannerIDTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="213,84,0,0"/>
+    <TextBox x:Name="FirstNameTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="213,115,0,0"/>
+    <TextBox x:Name="LastNameTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="213,147,0,0"/>
+    <TextBox x:Name="PhoneNumberTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="213,178,0,0"/>
+    <TextBox x:Name="EmailTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="213,209,0,0"/>
+    <TextBox x:Name="CredentialTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="213,239,0,0"/>
+    <TextBox x:Name="InitialRegistrationDateTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="213,271,0,0"/>
+    <TextBox x:Name="NoteTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="266" Margin="213,307,0,0"/>
+    <Button x:Name="BackButton" Content="Back" HorizontalAlignment="Left" Margin="104,400,0,0" VerticalAlignment="Top" Width="74" RenderTransformOrigin="0.317,-0.3" Height="20" Click="BackButton_Click"/>
+    <Button x:Name="SubmitButton" Content="Submit" HorizontalAlignment="Left" Margin="282,400,0,0" VerticalAlignment="Top" Width="76" RenderTransformOrigin="0.317,-0.3" Height="20" Click="SubmitButton_Click"/>
+    <Label x:Name="StatusLabel" Content="Status" HorizontalAlignment="Left" Margin="30,332,0,0" VerticalAlignment="Top" Width="120"/>
+    <ComboBox x:Name="StatusComboBox" HorizontalAlignment="Left" Margin="213,342,0,0" VerticalAlignment="Top" Width="265" Height="22">
+      <ComboBoxItem IsSelected="True" Content="Active"/>
+      <ComboBoxItem Content="Unactive"/>
+    </ComboBox>
 
-    </Grid>
+  </Grid>
 </Window>

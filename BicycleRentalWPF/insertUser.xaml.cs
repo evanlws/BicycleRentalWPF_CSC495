@@ -33,12 +33,12 @@ namespace BicycleRentalWPF
           string lastName = LastNameTextBox.Text;
           string phoneNumber = PhoneNumberTextBox.Text;
           string email = EmailTextBox.Text;
-          string userType = Convert.ToString(UserTypeComboBox.SelectedItem);
+          string UserType = Convert.ToString(UserTypeComboBox.SelectedItem);
           string notes = NoteTextBox.Text;
           string status = Convert.ToString(StatusComboBox.SelectedItem);
           string dateStatusUpdated = DateStatusUpdatedTextField.Text;
 
-          User newUser = new User(bannerID, firstName, lastName, phoneNumber, email, userType, notes, status, dateStatusUpdated);
+          User newUser = new User(bannerID, firstName, lastName, phoneNumber, email, UserType, notes, status, dateStatusUpdated);
           newUser.insert();
 
           MessageBox.Show("User insert successful!");

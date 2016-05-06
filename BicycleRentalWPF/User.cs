@@ -65,7 +65,7 @@ namespace BicycleRentalWPF
 
       connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;" +
                 @"Data source=..\BicycleRental.accdb";
-        }
+    }
     //------------------------------------------------------------------
     public User(string bannerId, string firstName, string lastName,
        string phoneNumber, string emailAddress, string userType, string notes, string status, string dateStatusUpdated)
@@ -74,7 +74,7 @@ namespace BicycleRentalWPF
       connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;" +
                 @"Data source=..\BicycleRental.accdb";
 
-            this.BannerId = bannerId;
+      this.BannerId = bannerId;
       this.FirstName = firstName;
       this.LastName = lastName;
       this.PhoneNumber = phoneNumber;
@@ -85,11 +85,9 @@ namespace BicycleRentalWPF
       this.DateStatusUpdated = dateStatusUpdated;
 
     }
-    //------------------------------------------------------------------
-    public void populate(int Id)
+    //populate helper
+    private void populateHelper(List<Object> results)
     {
-      string queryString = "SELECT * FROM [User] WHERE (ID = " + Id + ")";
-      List<Object> results = getValues(queryString);
       if (results != null)
       {
         foreach (object result in results)
@@ -100,36 +98,53 @@ namespace BicycleRentalWPF
           {
             // DEBUG Console.WriteLine(rowValue);
             if (count == 0)
-              ID = Convert.ToInt32(rowValue);
+              this.ID = Convert.ToInt32(rowValue);
             else if (count == 1)
-              BannerId = Convert.ToString(rowValue);
+              this.BannerId = Convert.ToString(rowValue);
             else if (count == 2)
-              FirstName = Convert.ToString(rowValue);
+              this.FirstName = Convert.ToString(rowValue);
             else if (count == 3)
-              LastName = Convert.ToString(rowValue);
+              this.LastName = Convert.ToString(rowValue);
             else if (count == 4)
-              PhoneNumber = Convert.ToString(rowValue);
+              this.PhoneNumber = Convert.ToString(rowValue);
             else if (count == 5)
-              EmailAddress = Convert.ToString(rowValue);
+              this.EmailAddress = Convert.ToString(rowValue);
             else if (count == 6)
-              UserType = Convert.ToString(rowValue);
+              this.UserType = Convert.ToString(rowValue);
             else if (count == 7)
-              Notes = Convert.ToString(rowValue);
+              this.Notes = Convert.ToString(rowValue);
             else if (count == 8)
-              Status = Convert.ToString(rowValue);
+              this.Status = Convert.ToString(rowValue);
             else if (count == 9)
-              DateStatusUpdated = Convert.ToString(rowValue);
+              this.DateStatusUpdated = Convert.ToString(rowValue);
             count = count + 1;
           }
         }
       }
     }
 
+    //populates user
+    public void populate(int ID)
+    {
+      string queryString = "SELECT * FROM [User] WHERE (ID = " + ID + ")";
+      List<Object> results = getValues(queryString);
+      populateHelper(results);
+    }
+
+    //populates user
+    public void populateBannerID(string ID)
+    {
+      string queryString = "SELECT * FROM [User] WHERE (BannerID = '" + ID + "')";
+      List<Object> results = getValues(queryString);
+      populateHelper(results);
+    }
+
+    //inserts user into user table 
     public void insert()
     {
 
       string insertQuery =
-      "INSERT INTO [User] (BannerId, FirstName, LastName, PhoneNumber, EmailAddress, UserType, Notes, Status) " +
+      "INSERT INTO [User] (BannerId, FirstName, LastName, PhoneNumber, EmailAddress, UserType, Notes, Status, DateStatusUpdated) " +
       "VALUES (" +
       "'" + this.BannerId + "', '" +
       this.FirstName + "', '" +
@@ -138,7 +153,9 @@ namespace BicycleRentalWPF
       this.EmailAddress + "', '" +
       this.UserType + "', '" +
       this.Notes + "', '" +
-      this.Status + "')";
+      this.Status + "', '" +
+      this.DateStatusUpdated + "')";
+
       int returnCode = modifyDatabase(insertQuery);
       if (returnCode != 0)
       {
@@ -147,7 +164,7 @@ namespace BicycleRentalWPF
       else
       {
         Console.WriteLine("User object successfully inserted");
-        string idQueryString = "SELECT MAX(BannerID) FROM [User]";
+        string idQueryString = "SELECT MAX(ID) FROM [User]";
         List<Object> results = getValues(idQueryString);
         if (results != null)
         {
@@ -165,19 +182,19 @@ namespace BicycleRentalWPF
       }
     }
 
+    //update user in user table
     public void update()
     {
-      DateStatusUpdated = DateTime.Now.ToString("yyyy-MM-dd");
       string updateQuery = "UPDATE [User] SET " +
-          " BannerId = '" + this.BannerId + "' ," +
+          " BannerID = '" + this.BannerId + "' ," +
           " FirstName = '" + this.FirstName + "' ," +
-          " LastName = '" + this.LastName + "' ," +
+          " LastName = '" + this.LastName + "' , " +
           " PhoneNumber = '" + this.PhoneNumber + "' ," +
           " EmailAddress = '" + this.EmailAddress + "' ," +
-          " UserType = '" + this.UserType + "', " +
-          " Notes = '" + this.Notes + "', " +
-          " Status = '" + this.Status + "', " +
-          " DateStatusUpdated = '" + this.DateStatusUpdated + "'" +
+          " UserType = '" + this.UserType + "' ," +
+          " Notes = '" + this.Notes + "' ," +
+          " Status = '" + this.Status + "' ," +
+          " DateStatusUpdated = '" + this.DateStatusUpdated + "' " +
           " WHERE " +
           " ID = " + this.ID;
       Console.WriteLine(updateQuery);
@@ -188,6 +205,7 @@ namespace BicycleRentalWPF
         Console.WriteLine("User object successfully updated");
     }
 
+    //deletes user from user table 
     public void delete()
     {
       string deleteQuery = "DELETE FROM [User] WHERE " +
@@ -281,7 +299,7 @@ namespace BicycleRentalWPF
     }
     public void setStatus(string status)
     {
-            this.Status = status;
+      this.Status = status;
     }
 
     public void setDateStatusUpdated(string dateStatusUpdated)
@@ -289,4 +307,5 @@ namespace BicycleRentalWPF
       this.DateStatusUpdated = dateStatusUpdated;
     }
   }
+
 }

@@ -19,9 +19,13 @@ namespace BicycleRentalWPF
     /// </summary>
     public partial class modifyVehicle1 : Window
     {
-        public modifyVehicle1()
+
+      Window myCaller;
+        public modifyVehicle1(Window mm)
         {
             InitializeComponent();
+            myCaller = mm;
+
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)

@@ -19,9 +19,11 @@ namespace BicycleRentalWPF
     /// </summary>
     public partial class rentVehicle : Window
     {
-        public rentVehicle()
+      Window myCaller;
+        public rentVehicle(Window mm)
         {
             InitializeComponent();
+            myCaller = mm;
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)

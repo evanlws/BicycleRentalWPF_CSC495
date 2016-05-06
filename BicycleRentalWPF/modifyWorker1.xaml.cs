@@ -19,23 +19,26 @@ namespace BicycleRentalWPF
     /// </summary>
     public partial class modifyWorker1 : Window
     {
-        public modifyWorker1()
-        {
-            InitializeComponent();
-        }
+      Window myCaller;
+
+      public modifyWorker1(mainMenu mm)
+      {
+        InitializeComponent();
+        myCaller = mm;
+      }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            DialogResult = false;
+          this.Hide();
+          myCaller.Show();
         }
 
         private void SubmitButton_Click(object sender, RoutedEventArgs e)
         {
-
-
-
-
-
+          string bannerId = BannerIDTextBox.Text;
+          Worker worker = new Worker();
+          worker.populateBannerID(bannerId);
+          modifyWorker2 mu2 = new modifyWorker2(myCaller, worker);
         }
     }
 }

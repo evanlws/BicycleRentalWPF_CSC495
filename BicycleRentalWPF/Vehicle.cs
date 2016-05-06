@@ -25,7 +25,6 @@ namespace BicycleRentalWPF
     {
       connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;" +
           @"Data source=..\BicycleRental.accdb";
-
     }
 
     //------------------------------------------------------------------

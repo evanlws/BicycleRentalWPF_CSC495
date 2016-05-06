@@ -19,14 +19,40 @@ namespace BicycleRentalWPF
     /// </summary>
     public partial class insertVehicle : Window
     {
-        public insertVehicle()
-        {
-            InitializeComponent();
-        }
+
+      Window myCaller;
+
+      public insertVehicle(mainMenu mm)
+      {
+        InitializeComponent();
+        myCaller = mm;
+      }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
             DialogResult = false;
+        }
+
+        private void SubmitButton_Click(object sender, RoutedEventArgs e)
+        {
+          string bikeMake = BikeMakeTextBox.Text;
+          string modelNumber = ModelNumberTextBox.Text;
+          string serialNum = SerialNumberTextBox.Text;
+          string color = ColorTextBox.Text;
+          string description = DescriptionTextBox.Text;
+          string location = LocationTextBox.Text;
+          string physicalCondition = PhysicalConditionTextBox.Text;
+          string notes = NotesTextBox.Text;
+          string status = Convert.ToString(StatusComboBox.SelectedItem);
+          string dateStatusUpdated = DateTime.Now.ToString("yyyy-MM-dd");
+
+          Vehicle newVehicle = new Vehicle(bikeMake, modelNumber, serialNum, color, description, location, physicalCondition, notes, status, dateStatusUpdated);
+          newVehicle.insert();
+
+          MessageBox.Show("Vehicle insert successful!");
+
+          this.Close();
+          myCaller.Show();
         }
     }
 }

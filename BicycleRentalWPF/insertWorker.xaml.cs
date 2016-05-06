@@ -19,10 +19,14 @@ namespace BicycleRentalWPF
     /// </summary>
     public partial class insertWorker : Window
     {
-        public insertWorker()
-        {
-            InitializeComponent();
-        }
+
+      Window myCaller;
+
+      public insertWorker(mainMenu mm)
+      {
+        InitializeComponent();
+        myCaller = mm;
+      }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
@@ -31,13 +35,23 @@ namespace BicycleRentalWPF
 
         private void SubmitButton_Click(object sender, RoutedEventArgs e)
         {
+          string bannerID = BannerIDTextBox.Text;
+          string firstName = FirstNameTextBox.Text;
+          string lastName = LastNameTextBox.Text;
+          string phoneNumber = PhoneNumberTextBox.Text;
+          string email = EmailTextBox.Text;
+          string credential = CredentialTextBox.Text;
+          string notes = NoteTextBox.Text;
+          string status = Convert.ToString(StatusComboBox.SelectedItem);
+          string dateStatusUpdated = DateTime.Now.ToString("yyyy-MM-dd");
 
+          Worker newWorker = new Worker(bannerID, firstName, lastName, phoneNumber, email, credential, notes, status, dateStatusUpdated);
+          newWorker.insert();
 
+          MessageBox.Show("Worker insert successful!");
 
-
-
-
-
+          this.Close();
+          myCaller.Show();
         }
     }
 }

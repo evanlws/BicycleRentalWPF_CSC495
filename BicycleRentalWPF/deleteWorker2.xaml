@@ -25,7 +25,7 @@
         <TextBox x:Name="LastNameTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="213,147,0,0"/>
         <TextBox x:Name="PhoneNumberTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="213,178,0,0"/>
         <TextBox x:Name="EmailTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="213,209,0,0"/>
-        <TextBox x:Name="UserTypeTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="213,239,0,0"/>
+        <TextBox x:Name="WorkerTypeTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="213,239,0,0"/>
         <TextBox x:Name="NoteTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="213,271,0,0"/>
         <TextBox x:Name="DateStatusUpdateTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="213,303,0,0"/>
         <Button x:Name="BackButton" Content="Back" HorizontalAlignment="Left" Margin="101,455,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.317,-0.3" Height="20" Grid.RowSpan="2" Click="BackButton_Click"/>
