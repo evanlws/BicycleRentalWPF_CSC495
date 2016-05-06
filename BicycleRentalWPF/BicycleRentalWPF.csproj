@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0C54EFC2-E2DC-41BF-BEF2-E0790A2EA055}</ProjectGuid>
+    <ProjectGuid>{A90F144D-D71F-4FC4-A7D8-72A14CA3C4C0}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BicycleRentalWPF</RootNamespace>
@@ -36,6 +36,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -53,110 +55,60 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="DatabaseController.cs" />
-    <Compile Include="DataValidation.cs" />
-    <Compile Include="deleteUser1.xaml.cs">
-      <DependentUpon>deleteUser1.xaml</DependentUpon>
+    <Compile Include="BicycleDataInputForm.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="deleteUser2.xaml.cs">
-      <DependentUpon>deleteUser2.xaml</DependentUpon>
+    <Compile Include="BicycleDataInputForm.Designer.cs">
+      <DependentUpon>BicycleDataInputForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="deleteVehicle1.xaml.cs">
-      <DependentUpon>deleteVehicle1.xaml</DependentUpon>
+    <Compile Include="DeleteForm.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="deleteVehicle2.xaml.cs">
-      <DependentUpon>deleteVehicle2.xaml</DependentUpon>
+    <Compile Include="DeleteForm.Designer.cs">
+      <DependentUpon>DeleteForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="deleteWorker1.xaml.cs">
-      <DependentUpon>deleteWorker1.xaml</DependentUpon>
+    <Compile Include="MainMenuForm1.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="deleteWorker2.xaml.cs">
-      <DependentUpon>deleteWorker2.xaml</DependentUpon>
+    <Compile Include="MainMenuForm1.Designer.cs">
+      <DependentUpon>MainMenuForm1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Fine.cs" />
-    <Compile Include="insertUser.xaml.cs">
-      <DependentUpon>insertUser.xaml</DependentUpon>
+    <Compile Include="RentABicycleForm.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="insertVehicle.xaml.cs">
-      <DependentUpon>insertVehicle.xaml</DependentUpon>
+    <Compile Include="RentABicycleForm.Designer.cs">
+      <DependentUpon>RentABicycleForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="insertWorker.xaml.cs">
-      <DependentUpon>insertWorker.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="mainMenu.xaml.cs">
-      <DependentUpon>mainMenu.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="modifyUser1.xaml.cs">
-      <DependentUpon>modifyUser1.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="modifyUser2.xaml.cs">
-      <DependentUpon>modifyUser2.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="modifyVechicle2.xaml.cs">
-      <DependentUpon>modifyVechicle2.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="modifyVehicle1.xaml.cs">
-      <DependentUpon>modifyVehicle1.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="modifyWorker1.xaml.cs">
-      <DependentUpon>modifyWorker1.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="modifyWorker2.xaml.cs">
-      <DependentUpon>modifyWorker2.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Persistable.cs" />
     <Compile Include="Rental.cs" />
     <Compile Include="RentalCollection.cs" />
-    <Compile Include="rentVehicle.xaml.cs">
-      <DependentUpon>rentVehicle.xaml</DependentUpon>
+    <Compile Include="ReturnBicycleForm.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="returnVehicle.xaml.cs">
-      <DependentUpon>returnVehicle.xaml</DependentUpon>
+    <Compile Include="ReturnBicycleForm.Designer.cs">
+      <DependentUpon>ReturnBicycleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateForm.Designer.cs">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
+    <Compile Include="UserDataInputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDataInputForm.Designer.cs">
+      <DependentUpon>UserDataInputForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vehicle.cs" />
     <Compile Include="VehicleCollection.cs" />
     <Compile Include="Worker.cs" />
-    <Page Include="deleteUser1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="deleteUser2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="deleteVehicle1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="deleteVehicle2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="deleteWorker1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="deleteWorker2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="insertUser.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="insertVehicle.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="insertWorker.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="mainMenu.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
+    <Compile Include="WorkerDataInputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkerDataInputForm.Designer.cs">
+      <DependentUpon>WorkerDataInputForm.cs</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -169,40 +121,9 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="modifyUser1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="modifyUser2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="modifyVechicle2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="modifyVehicle1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="modifyWorker1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="modifyWorker2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="rentVehicle.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="returnVehicle.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Persistable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -216,9 +137,33 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="BicycleDataInputForm.resx">
+      <DependentUpon>BicycleDataInputForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteForm.resx">
+      <DependentUpon>DeleteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenuForm1.resx">
+      <DependentUpon>MainMenuForm1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RentABicycleForm.resx">
+      <DependentUpon>RentABicycleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnBicycleForm.resx">
+      <DependentUpon>ReturnBicycleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateForm.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDataInputForm.resx">
+      <DependentUpon>UserDataInputForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkerDataInputForm.resx">
+      <DependentUpon>WorkerDataInputForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

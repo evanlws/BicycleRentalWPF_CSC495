@@ -6,39 +6,61 @@ using System.Threading.Tasks;
 
 namespace BicycleRentalWPF
 {
-  class VehicleCollection : Persistable
-  {
-    public List<Vehicle> bikes;
 
-    public VehicleCollection()
-      : base() // call parent default constructor
+    public class VehicleCollection : Persistable
     {
-      connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;" +
-          @"Data source=..\BicycleRental.accdb";
-    }
+        public List<Vehicle> bikes = new List<Vehicle>();
 
-    public void populateWithGoodAndAvailableBikes()
-    {
-
-      bikes = new List<Vehicle>();
-
-      string queryString = "SELECT ID FROM Vehicle WHERE PhysicalCondition = 'Good' AND Status = 'Available'";
-      List<Object> results = getValues(queryString);
-      if (results != null)
-      {
-        foreach (object result in results)
+      public VehicleCollection()
+            : base()
         {
-          IEnumerable<Object> row = result as IEnumerable<Object>;
-
-          foreach (object rowValue in row)
-          {
-            Vehicle vehicle = new Vehicle();
-            vehicle.populate(Convert.ToInt32(rowValue));
-            bikes.Add(vehicle);
-          }
+          connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;" +
+        @"Data source=..\BicycleRental.accdb";
         }
-      }
-    }
 
-  }
+        public void populateWithGoodAndAvailableBikes()
+        {
+            string queryString = "SELECT ID FROM Vehicle WHERE (PhysicalCondition = 'Good' AND Status = 'Active')";
+            List<Object> results = getValues(queryString);
+            if (results != null)
+            {
+                foreach (object result in results)
+                {
+                    IEnumerable<Object> row = result as IEnumerable<Object>;
+                    
+                    int vId = Convert.ToInt32(row.ElementAt(0));
+                    Vehicle aVehicle = new Vehicle();
+                    aVehicle.populate(vId);
+                    bikes.Add(aVehicle);
+                }
+            }
+        }
+
+        public Object [] getBikeIDs()
+        {
+            Object [] bikeIDs= new Object[bikes.Count()];
+            int count = 0;
+            foreach(Vehicle v in bikes)
+            {
+                int vID = v.ID;
+                bikeIDs[count] = vID;
+                count++;
+            }
+            return bikeIDs;
+        }
+
+      public override String ToString()
+        {
+            String valToReturn = "";
+            for (int cnt = 0; cnt < bikes.Count; cnt++)
+            {
+                valToReturn += bikes.ElementAt(cnt).ID + " ";
+            }
+            return valToReturn;
+        }
+
+    }
 }
+            
+        
+

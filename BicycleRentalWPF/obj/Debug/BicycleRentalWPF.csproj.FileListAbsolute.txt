@@ -1,100 +1,87 @@
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\MainWindow.baml
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\deleteUser1.g.cs
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\deleteUser2.g.cs
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\deleteVehicle1.g.cs
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\deleteVehicle2.g.cs
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\deleteWorker1.g.cs
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\deleteWorker2.g.cs
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\insertUser.g.cs
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\insertVehicle.g.cs
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\insertWorker.g.cs
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\mainMenu.g.cs
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\MainWindow.g.cs
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\modifyUser1.g.cs
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\modifyUser2.g.cs
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\modifyVechicle2.g.cs
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\modifyVehicle1.g.cs
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\modifyWorker1.g.cs
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\modifyWorker2.g.cs
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\rentVehicle.g.cs
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\returnVehicle.g.cs
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\App.g.cs
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\BicycleRentalWPF_MarkupCompile.cache
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\BicycleRentalWPF_MarkupCompile.lref
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\bin\Debug\BicycleRentalWPF.exe.config
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\bin\Debug\BicycleRentalWPF.exe
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\bin\Debug\BicycleRentalWPF.pdb
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\deleteUser1.baml
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\deleteUser2.baml
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\deleteVehicle1.baml
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\deleteVehicle2.baml
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\deleteWorker1.baml
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\deleteWorker2.baml
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\insertUser.baml
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\insertVehicle.baml
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\insertWorker.baml
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\mainMenu.baml
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\modifyUser1.baml
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\modifyUser2.baml
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\modifyVechicle2.baml
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\modifyVehicle1.baml
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\modifyWorker1.baml
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\modifyWorker2.baml
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\rentVehicle.baml
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\returnVehicle.baml
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.g.resources
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.Properties.Resources.resources
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.csproj.GenerateResource.Cache
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.exe
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.pdb
-\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.csprojResolveAssemblyReference.cache
+F:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\bin\Debug\BicycleRentalWPF.exe.config
+F:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\MainWindow.baml
+F:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\MainWindow.g.cs
+F:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\App.g.cs
+F:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF_MarkupCompile.cache
+F:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.g.resources
+F:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.BicycleDataInputForm.resources
+F:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.DeleteForm.resources
+F:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.MainMenuForm1.resources
+F:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.Properties.Resources.resources
+F:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.RentABicycleForm.resources
+F:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.ReturnBicycleForm.resources
+F:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.UpdateForm.resources
+F:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.UserDataInputForm.resources
+F:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.WorkerDataInputForm.resources
+F:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.csproj.GenerateResource.Cache
+F:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.exe
+F:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.pdb
+F:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\bin\Debug\BicycleRentalWPF.exe
+F:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\bin\Debug\BicycleRentalWPF.pdb
+F:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.csprojResolveAssemblyReference.cache
+E:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\bin\Debug\BicycleRentalWPF.exe.config
+E:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.exe
+E:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.pdb
+E:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\bin\Debug\BicycleRentalWPF.exe
+E:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\bin\Debug\BicycleRentalWPF.pdb
+E:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\MainWindow.baml
+E:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\MainWindow.g.cs
+E:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\App.g.cs
+E:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF_MarkupCompile.cache
+E:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.g.resources
+E:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.BicycleDataInputForm.resources
+E:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.DeleteForm.resources
+E:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.MainMenuForm1.resources
+E:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.Properties.Resources.resources
+E:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.RentABicycleForm.resources
+E:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.ReturnBicycleForm.resources
+E:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.UpdateForm.resources
+E:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.UserDataInputForm.resources
+E:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.WorkerDataInputForm.resources
+E:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.csproj.GenerateResource.Cache
+D:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\bin\Debug\BicycleRentalWPF.exe.config
+D:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\bin\Debug\BicycleRentalWPF.exe
+D:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\bin\Debug\BicycleRentalWPF.pdb
+D:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\MainWindow.baml
+D:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\MainWindow.g.cs
+D:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\App.g.cs
+D:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF_MarkupCompile.cache
+D:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.g.resources
+D:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.BicycleDataInputForm.resources
+D:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.DeleteForm.resources
+D:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.MainMenuForm1.resources
+D:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.Properties.Resources.resources
+D:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.RentABicycleForm.resources
+D:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.ReturnBicycleForm.resources
+D:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.UpdateForm.resources
+D:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.UserDataInputForm.resources
+D:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.WorkerDataInputForm.resources
+D:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.csproj.GenerateResource.Cache
+D:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.exe
+D:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.pdb
+E:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.csprojResolveAssemblyReference.cache
+D:\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.csprojResolveAssemblyReference.cache
+\\Mac\Home\Downloads\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\bin\Debug\BicycleRentalWPF.exe.config
+\\Mac\Home\Downloads\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.exe
+\\Mac\Home\Downloads\FinalProjectPhase2\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.pdb
 C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\bin\Debug\BicycleRentalWPF.exe.config
 C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.exe
 C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.pdb
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.csprojResolveAssemblyReference.cache
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\MainWindow.baml
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\deleteUser1.g.cs
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\deleteUser2.g.cs
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\deleteVehicle1.g.cs
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\deleteVehicle2.g.cs
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\deleteWorker1.g.cs
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\deleteWorker2.g.cs
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\insertUser.g.cs
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\insertVehicle.g.cs
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\insertWorker.g.cs
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\mainMenu.g.cs
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\MainWindow.g.cs
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\modifyUser1.g.cs
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\modifyUser2.g.cs
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\modifyVechicle2.g.cs
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\modifyVehicle1.g.cs
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\modifyWorker1.g.cs
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\modifyWorker2.g.cs
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\rentVehicle.g.cs
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\returnVehicle.g.cs
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\App.g.cs
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF_MarkupCompile.cache
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF_MarkupCompile.lref
 C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\bin\Debug\BicycleRentalWPF.exe
 C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\bin\Debug\BicycleRentalWPF.pdb
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\deleteUser1.baml
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\deleteUser2.baml
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\deleteVehicle1.baml
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\deleteVehicle2.baml
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\deleteWorker1.baml
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\deleteWorker2.baml
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\insertUser.baml
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\insertVehicle.baml
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\insertWorker.baml
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\mainMenu.baml
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\modifyUser1.baml
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\modifyUser2.baml
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\modifyVechicle2.baml
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\modifyVehicle1.baml
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\modifyWorker1.baml
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\modifyWorker2.baml
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\rentVehicle.baml
-C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\returnVehicle.baml
+C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.csprojResolveAssemblyReference.cache
+C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\MainWindow.baml
+C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\MainWindow.g.cs
+C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\App.g.cs
+C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF_MarkupCompile.cache
 C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.g.resources
+C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.BicycleDataInputForm.resources
+C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.DeleteForm.resources
+C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.MainMenuForm1.resources
 C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.Properties.Resources.resources
+C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.RentABicycleForm.resources
+C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.ReturnBicycleForm.resources
+C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.UpdateForm.resources
+C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.UserDataInputForm.resources
+C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.WorkerDataInputForm.resources
 C:\Users\Public\Documents\Visual Studio Projects\BicycleRentalWPF\BicycleRentalWPF\obj\Debug\BicycleRentalWPF.csproj.GenerateResource.Cache

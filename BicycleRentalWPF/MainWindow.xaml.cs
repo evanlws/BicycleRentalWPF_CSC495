@@ -12,46 +12,42 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Forms;
 
 namespace BicycleRentalWPF
 {
-  /// <summary>
-  /// Interaction logic for MainWindow.xaml
-  /// </summary>
-  /// 
-  public partial class LoginWindow : Window
-  {
-      
-    public LoginWindow()
-    {
-      InitializeComponent();
-    }
-
-    //exits the program
-    private void exitButtonClicked(object sender, RoutedEventArgs e)
-    {
-      System.Environment.Exit(0);
-    }
-
-    //checks user name and password entered and continues to main menu if correct
-    private void submitButtonClicked(object sender, RoutedEventArgs e)
-    {
-      string bannerId = BannerIDTextBox.Text;
-      string pwd = PasswordBox.Password;
-      Worker currentWorker = new Worker();
-      currentWorker.populateBannerID(bannerId);
-
-      if (!(pwd.Equals(currentWorker.getCredential())))
-      {
-        MessageBox.Show("Incorrect password, please try again");
-      }
-      else
-      {
-        this.Hide();
-        mainMenu mm = new mainMenu();
-        mm.Show();
-      }
-    }
  
-  }
+    public partial class MainWindow : Window
+    {
+       
+        public MainWindow()
+        {
+            InitializeComponent();
+
+        }
+
+        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        {
+            System.Environment.Exit(0);
+        }
+
+        private void SubmitButton_Click(object sender, RoutedEventArgs e)
+        {
+            string workerID = BannerIDBox.Text;
+            string pwd = PasswordBox1.Password;
+            Worker currentWorker = new Worker();
+            currentWorker.populateBannerID(workerID);
+
+            if ( (pwd.Equals(currentWorker.WorkerPassword)))
+            {
+                System.Windows.Forms.MessageBox.Show("Incorrect Password or BannerID");
+            }
+            else
+            {
+                this.Hide();
+                MainMenuForm1 mmf = new MainMenuForm1(this, currentWorker);
+                mmf.Show();
+            }              
+        }     
+    }
 }

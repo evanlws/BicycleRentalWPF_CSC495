@@ -1,19 +1,20 @@
-﻿<Window x:Class="BicycleRentalWPF.LoginWindow"
+﻿<Window x:Class="BicycleRentalWPF.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="LoginWindow" Height="350" Width="528.78">
-    <Grid>
+        Title="MainWindow" Height="350" Width="525">
+    <Grid Background="#FF101D12">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="183*"/>
+            <ColumnDefinition Width="38*"/>
+            <ColumnDefinition Width="296*"/>
         </Grid.ColumnDefinitions>
-        <Label Content="Brockport Bicycle Rental System" Height="36" Margin="110,27,121,0" VerticalAlignment="Top" Width="290" FontSize="20" HorizontalAlignment="Center"/>
-        <Label Content="Login Screen" Height="36" Margin="191,63,198,0" VerticalAlignment="Top" Width="132" FontSize="20" HorizontalAlignment="Center" FontWeight="Bold"/>
-        <Label Content="BannerId:" HorizontalAlignment="Left" Margin="89,133,0,0" VerticalAlignment="Top" Width="64"/>
-        <Label Content="Password:&#xD;&#xA;" HorizontalAlignment="Left" Margin="89,173,0,0" VerticalAlignment="Top" Width="64" Height="23"/>
-        <TextBox x:Name="BannerIDTextBox" HorizontalAlignment="Left" Height="23" Margin="178,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220"/>
-        <Button Content="SUBMIT" HorizontalAlignment="Left" Margin="150,235,0,0" VerticalAlignment="Top" Width="75" Click="submitButtonClicked"/>
-        <Button Content="EXIT" HorizontalAlignment="Left" Margin="323,235,0,0" VerticalAlignment="Top" Width="75" Click="exitButtonClicked"/>
-        <PasswordBox x:Name="PasswordBox" HorizontalAlignment="Left" Margin="178,173,0,0" VerticalAlignment="Top" Width="220" Height="23" PasswordChar="●"/>
-
+        <Label x:Name="Name" Content="Brockport Bicycle Rental System" HorizontalAlignment="Left" Margin="78,10,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Foreground="#FFFFA63B" FontFamily="Lucida Sans" FontSize="22" FontWeight="Bold"/>
+        <Label x:Name="Login" Content="LOGIN SCREEN" HorizontalAlignment="Left" Margin="24,62,0,0" VerticalAlignment="Top" Grid.Column="1" Foreground="#FFFFA63B" Grid.ColumnSpan="2" FontSize="16" FontFamily="Lucida Sans" FontWeight="Bold"/>
+        <TextBox x:Name="BannerIDBox" HorizontalAlignment="Left" Height="23" Margin="34,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Grid.Column="2" Background="White" FontFamily="Lucida Sans" FontSize="14"/>
+        <Label x:Name="BannerID" Content="Banner ID" HorizontalAlignment="Left" Margin="125,133,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Foreground="White" FontFamily="Lucida Sans" FontSize="14"/>
+        <Label x:Name="Password" Content="Password" HorizontalAlignment="Left" Margin="125,180,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Foreground="White" FontSize="14" FontFamily="Lucida Sans"/>
+        <Button x:Name="SubmitButton" Content="SUBMIT" Grid.Column="2" HorizontalAlignment="Left" Margin="79,251,0,0" VerticalAlignment="Top" Width="75" Click="SubmitButton_Click" Foreground="#FF0A130B" Background="#FFFFA63B" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="ExitButton" Content="EXIT" HorizontalAlignment="Left" Margin="144,251,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" Click="ExitButton_Click" Background="#FFFFA63B" Foreground="#FF0A130B" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold"/>
+        <PasswordBox x:Name="PasswordBox1" Grid.Column="2" HorizontalAlignment="Left" Margin="34,180,0,0" VerticalAlignment="Top" Width="144"/>
     </Grid>
 </Window>
