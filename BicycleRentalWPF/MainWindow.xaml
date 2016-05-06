@@ -11,8 +11,8 @@
         <Label Content="BannerId:" HorizontalAlignment="Left" Margin="89,133,0,0" VerticalAlignment="Top" Width="64"/>
         <Label Content="Password:&#xD;&#xA;" HorizontalAlignment="Left" Margin="89,173,0,0" VerticalAlignment="Top" Width="64" Height="23"/>
         <TextBox x:Name="BannerIDTextBox" HorizontalAlignment="Left" Height="23" Margin="178,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220"/>
-        <Button Content="Sign In" HorizontalAlignment="Left" Margin="323,235,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-        <Button Content="EXIT" HorizontalAlignment="Left" Margin="178,235,0,0" VerticalAlignment="Top" Width="75" Click="exitButtonClicked"/>
+        <Button Content="SUBMIT" HorizontalAlignment="Left" Margin="150,235,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="EXIT" HorizontalAlignment="Left" Margin="323,235,0,0" VerticalAlignment="Top" Width="75" Click="exitButtonClicked"/>
         <PasswordBox x:Name="PasswordBox" HorizontalAlignment="Left" Margin="178,173,0,0" VerticalAlignment="Top" Width="220" Height="23" PasswordChar="●"/>
 
     </Grid>

@@ -38,7 +38,7 @@ namespace BicycleRentalWPF
 
         public void checkBannerPassword(string password)
         {
-            command.CommandText = "SELECT * FROM  Worker WHERE BannerId = '" + id + "'";
+            command.CommandText = "SELECT * FROM  Worker WHERE Credentials = '" + password + "'";
             OleDbDataReader reader = command.ExecuteReader();
 
             if (reader.Read())

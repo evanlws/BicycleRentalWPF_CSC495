@@ -23,7 +23,7 @@ namespace BicycleRentalWPF
   public partial class LoginWindow : Window
   {
       
-        public LoginWindow()
+    public LoginWindow()
     {
       InitializeComponent();
     }
