@@ -273,10 +273,10 @@
       this.Controls.Add(this.MenuLabel);
       this.Controls.Add(this.MainTitleLabel);
       this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(29)))), ((int)(((byte)(18)))));
+      this.ForeColor = System.Drawing.Color.Black;
       this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
       this.Name = "MainMenu";
-      this.Text = "MainMenuForm1";
+      this.Text = "Main Menu";
       this.ResumeLayout(false);
       this.PerformLayout();
 

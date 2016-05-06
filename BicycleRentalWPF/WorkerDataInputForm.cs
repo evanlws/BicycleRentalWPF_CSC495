@@ -55,6 +55,7 @@ namespace BicycleRentalWPF
             LastNameBox.Text = existingWorker.LastName;
             PhoneNumberBox.Text = existingWorker.PhoneNumber;
             EmailBox.Text = existingWorker.EmailAddress;
+            credentialTextBox.Text = existingWorker.Credential;
             WorkerPasswordBox.Text = existingWorker.WorkerPassword;
             NotesBox.Text = existingWorker.Notes;
             StatusComboBox.SelectedIndex = StatusComboBox.FindStringExact(existingWorker.Status);
@@ -86,6 +87,7 @@ namespace BicycleRentalWPF
             LastNameBox.Text = existingWorker.LastName;
             PhoneNumberBox.Text = existingWorker.PhoneNumber;
             EmailBox.Text = existingWorker.EmailAddress;
+            credentialTextBox.Text = existingWorker.Credential;
             StatusComboBox.SelectedIndex = StatusComboBox.FindStringExact(existingWorker.Status);
             WorkerPasswordBox.Text = existingWorker.WorkerPassword;
             NotesBox.Text = existingWorker.Notes;

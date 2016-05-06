@@ -52,6 +52,11 @@ namespace BicycleRentalWPF
              dateDue, timeDue, dateReturned, timeReturned,
                 checkoutWorkerID, checkinWorkerID);
 
+            Vehicle v = new Vehicle();
+            v.populate(vehicleID);
+            v.Status = "Unavailable";
+            v.update();
+
             r1.insert();
 
             System.Windows.Forms.MessageBox.Show("Rental successful!");

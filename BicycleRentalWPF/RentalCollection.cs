@@ -19,7 +19,7 @@ namespace BicycleRentalWPF
 
         public void populateWithRentedOutBikes()
         {
-            string queryString = "SELECT ID FROM Rental WHERE (CheckInWorkerId = 0)";
+            string queryString = "SELECT ID FROM Rental WHERE (CheckinWorkerId = 0)";
             List<Object> results = getValues(queryString);
             if (results != null)
             {

@@ -8,7 +8,7 @@
       <ColumnDefinition Width="38*"/>
       <ColumnDefinition Width="296*"/>
     </Grid.ColumnDefinitions>
-    <Label x:Name="Name" Content="Brockport Bicycle Rental System" HorizontalAlignment="Left" Margin="145,21,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Foreground="Black" FontFamily="Arial" FontSize="14" FontWeight="Bold"/>
+    <Label x:Name="NameLabel" Content="Brockport Bicycle Rental System" HorizontalAlignment="Left" Margin="145,21,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Foreground="Black" FontFamily="Arial" FontSize="14" FontWeight="Bold"/>
     <Label x:Name="Login" Content="LOGIN SCREEN" HorizontalAlignment="Left" Margin="24,62,0,0" VerticalAlignment="Top" Grid.Column="1" Foreground="Black" Grid.ColumnSpan="2" FontSize="14" FontFamily="Arial" FontWeight="Bold"/>
     <TextBox x:Name="BannerIdTextBox" HorizontalAlignment="Left" Height="23" Margin="34,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Grid.Column="2" Background="White" FontFamily="Lucida Sans" FontSize="14"/>
     <Label x:Name="BannerIdLabel" Content="Banner ID" HorizontalAlignment="Left" Margin="125,133,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Foreground="Black" FontFamily="Arial" FontSize="14"/>

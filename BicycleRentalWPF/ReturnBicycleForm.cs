@@ -38,6 +38,11 @@ namespace BicycleRentalWPF
             r1.CheckinWorkerID = currentWorker.ID;
             r1.update();
 
+            Vehicle v = new Vehicle();
+            v.populate(vehicleID);
+            v.Status = "Available";
+            v.update();
+
             System.Windows.Forms.MessageBox.Show("Return successful!");
 
             this.Hide();
