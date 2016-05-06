@@ -45,7 +45,7 @@ namespace BicycleRentalWPF
             else
             {
                 this.Hide();
-                MainMenuForm1 mmf = new MainMenuForm1(this, currentWorker);
+                MainMenu mmf = new MainMenu(this, currentWorker);
                 mmf.Show();
             }              
         }     

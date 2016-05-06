@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-      this.RajIsMyFavorite = new System.Windows.Forms.Label();
+      this.BicycleDataInputFormTitle = new System.Windows.Forms.Label();
       this.BikeMake = new System.Windows.Forms.Label();
       this.ModelNumber = new System.Windows.Forms.Label();
       this.SerialNumber = new System.Windows.Forms.Label();
@@ -51,18 +51,18 @@
       this.StatusComboBox = new System.Windows.Forms.ComboBox();
       this.SuspendLayout();
       // 
-      // RajIsMyFavorite
+      // BicycleDataInputFormTitle
       // 
-      this.RajIsMyFavorite.AutoSize = true;
-      this.RajIsMyFavorite.BackColor = System.Drawing.Color.Transparent;
-      this.RajIsMyFavorite.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.RajIsMyFavorite.ForeColor = System.Drawing.Color.Black;
-      this.RajIsMyFavorite.Location = new System.Drawing.Point(146, 9);
-      this.RajIsMyFavorite.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-      this.RajIsMyFavorite.Name = "RajIsMyFavorite";
-      this.RajIsMyFavorite.Size = new System.Drawing.Size(224, 22);
-      this.RajIsMyFavorite.TabIndex = 0;
-      this.RajIsMyFavorite.Text = "Enter New Bicycle Data";
+      this.BicycleDataInputFormTitle.AutoSize = true;
+      this.BicycleDataInputFormTitle.BackColor = System.Drawing.Color.Transparent;
+      this.BicycleDataInputFormTitle.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.BicycleDataInputFormTitle.ForeColor = System.Drawing.Color.Black;
+      this.BicycleDataInputFormTitle.Location = new System.Drawing.Point(146, 9);
+      this.BicycleDataInputFormTitle.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+      this.BicycleDataInputFormTitle.Name = "BicycleDataInputFormTitle";
+      this.BicycleDataInputFormTitle.Size = new System.Drawing.Size(224, 22);
+      this.BicycleDataInputFormTitle.TabIndex = 0;
+      this.BicycleDataInputFormTitle.Text = "Enter New Bicycle Data";
       // 
       // BikeMake
       // 
@@ -307,7 +307,7 @@
       this.Controls.Add(this.SerialNumber);
       this.Controls.Add(this.ModelNumber);
       this.Controls.Add(this.BikeMake);
-      this.Controls.Add(this.RajIsMyFavorite);
+      this.Controls.Add(this.BicycleDataInputFormTitle);
       this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.ForeColor = System.Drawing.Color.White;
       this.Margin = new System.Windows.Forms.Padding(6);
@@ -320,7 +320,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label RajIsMyFavorite;
+        private System.Windows.Forms.Label BicycleDataInputFormTitle;
         private System.Windows.Forms.Label BikeMake;
         private System.Windows.Forms.Label ModelNumber;
         private System.Windows.Forms.Label SerialNumber;

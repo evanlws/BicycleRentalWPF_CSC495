@@ -12,10 +12,10 @@ namespace BicycleRentalWPF
 {
     public partial class UpdateForm : Form
     {
-        MainMenuForm1 myCaller;
+        MainMenu myCaller;
         string dataToModify;
 
-        public UpdateForm(MainMenuForm1 m, string s)
+        public UpdateForm(MainMenu m, string s)
         {
             
             InitializeComponent();

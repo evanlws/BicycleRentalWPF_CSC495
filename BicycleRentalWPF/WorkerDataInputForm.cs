@@ -13,21 +13,21 @@ namespace BicycleRentalWPF
     public partial class WorkerDataInputForm : Form
     {
         Form myCaller;
-        MainMenuForm1 mainMenu;
-        string InteractionState;
+        MainMenu mainMenu;
+        string FormAction;
         string id;
 
-        public WorkerDataInputForm(MainMenuForm1 m)
+        public WorkerDataInputForm(MainMenu m)
         {
             InitializeComponent();
             myCaller = m;
             WorkerPasswordBox.PasswordChar = '*';
-            InteractionState = "nothing";
+            FormAction = "insert";
             RyanC.Text = "Enter new Worker data";
 
             Object[] credential = new Object[2];
-            credential[0] = "Administrator";
-            credential[1] = "Ordinary";
+            credential[0] = "Faculty/Staff";
+            credential[1] = "Student";
             CredentialComboBox.Items.AddRange(credential);
 
             Object[] status = new Object[2];
@@ -39,7 +39,7 @@ namespace BicycleRentalWPF
 
         }
 
-        public WorkerDataInputForm(UpdateForm uf, string s, MainMenuForm1 m)
+        public WorkerDataInputForm(UpdateForm uf, string s, MainMenu m)
         {
             InitializeComponent();
             myCaller = uf;
@@ -70,11 +70,11 @@ namespace BicycleRentalWPF
             NotesBox.Text = existingWorker.Notes;
             StatusComboBox.SelectedIndex = StatusComboBox.FindStringExact(existingWorker.Status);
            
-            InteractionState = "update";
+            FormAction = "update";
             id = s;
         }
 
-        public WorkerDataInputForm(DeleteForm df, string s, MainMenuForm1 m)
+        public WorkerDataInputForm(DeleteForm df, string s, MainMenu m)
         {
             InitializeComponent();
             myCaller = df;
@@ -107,14 +107,14 @@ namespace BicycleRentalWPF
             NotesBox.Text = existingWorker.Notes;
             StatusComboBox.SelectedIndex = StatusComboBox.FindStringExact(existingWorker.Status);
 
-            InteractionState = "delete";
+            FormAction = "delete";
             id = s; 
         }
 
         private void SubmitButton_Click(object sender, EventArgs e)
         {
 
-            if (InteractionState.Equals("nothing"))
+            if (FormAction.Equals("insert"))
             {
                 string bannerID = BannerIDBox.Text;
                 string firstName = FirstNameBox.Text;
@@ -135,7 +135,7 @@ namespace BicycleRentalWPF
                 this.Hide();
                 myCaller.Show();
             }
-            else if (InteractionState.Equals("update"))
+            else if (FormAction.Equals("update"))
             {
                 Worker existingWorker = new Worker();
                 existingWorker.populateBannerID(id);
@@ -157,7 +157,7 @@ namespace BicycleRentalWPF
                 this.Hide();
                 mainMenu.Show();
             }
-            else if (InteractionState.Equals("delete"))
+            else if (FormAction.Equals("delete"))
             {
                 Worker existingWorker = new Worker();
                 existingWorker.populateBannerID(id);

@@ -10,11 +10,11 @@
     </Grid.ColumnDefinitions>
     <Label x:Name="Name" Content="Brockport Bicycle Rental System" HorizontalAlignment="Left" Margin="145,21,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Foreground="Black" FontFamily="Arial" FontSize="14" FontWeight="Bold"/>
     <Label x:Name="Login" Content="LOGIN SCREEN" HorizontalAlignment="Left" Margin="24,62,0,0" VerticalAlignment="Top" Grid.Column="1" Foreground="Black" Grid.ColumnSpan="2" FontSize="14" FontFamily="Arial" FontWeight="Bold"/>
-    <TextBox x:Name="BannerIDBox" HorizontalAlignment="Left" Height="23" Margin="34,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Grid.Column="2" Background="White" FontFamily="Lucida Sans" FontSize="14"/>
-    <Label x:Name="BannerID" Content="Banner ID" HorizontalAlignment="Left" Margin="125,133,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Foreground="Black" FontFamily="Arial" FontSize="14"/>
-    <Label x:Name="Password" Content="Password" HorizontalAlignment="Left" Margin="125,180,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Foreground="Black" FontSize="14" FontFamily="Arial"/>
+    <TextBox x:Name="BannerIdTextBox" HorizontalAlignment="Left" Height="23" Margin="34,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Grid.Column="2" Background="White" FontFamily="Lucida Sans" FontSize="14"/>
+    <Label x:Name="BannerIdLabel" Content="Banner ID" HorizontalAlignment="Left" Margin="125,133,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Foreground="Black" FontFamily="Arial" FontSize="14"/>
+    <Label x:Name="PasswordLabel" Content="Password" HorizontalAlignment="Left" Margin="125,180,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Foreground="Black" FontSize="14" FontFamily="Arial"/>
     <Button x:Name="SubmitButton" Content="SUBMIT" Grid.Column="2" HorizontalAlignment="Left" Margin="79,251,0,0" VerticalAlignment="Top" Width="75" Click="SubmitButton_Click" Foreground="Black" FontFamily="Arial" FontSize="14" FontWeight="Bold" Background="White"/>
     <Button x:Name="ExitButton" Content="EXIT" HorizontalAlignment="Left" Margin="144,251,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" Click="ExitButton_Click" Foreground="Black" FontFamily="Arial" FontSize="14" FontWeight="Bold" Background="White"/>
-    <PasswordBox x:Name="PasswordBox1" Grid.Column="2" HorizontalAlignment="Left" Margin="34,180,0,0" VerticalAlignment="Top" Width="144"/>
+    <PasswordBox x:Name="PasswordTextBox" Grid.Column="2" HorizontalAlignment="Left" Margin="34,180,0,0" VerticalAlignment="Top" Width="144"/>
   </Grid>
 </Window>

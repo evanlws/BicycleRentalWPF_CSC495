@@ -13,15 +13,16 @@ namespace BicycleRentalWPF
     public partial class BicycleDataInputForm : Form
     {
         Form myCaller;
-        MainMenuForm1 mainMenu;
+        MainMenu mainMenu;
         int id;
         string InteractionState;
 
-        public BicycleDataInputForm(MainMenuForm1 m)
+        public BicycleDataInputForm(MainMenu mm)
         {
             InitializeComponent();
+            myCaller = mm;
 
-            RajIsMyFavorite.Text = "Insert new Bicycle data";
+            BicycleDataInputFormTitle.Text = "Insert new Bicycle data";
             
 
             Object[] location = new Object[10];
@@ -30,9 +31,9 @@ namespace BicycleRentalWPF
             location[2] = "Harmon";
             location[3] = "McFarlane";
             location[4] = "Mortimer";
-            location[5] = "Seymour College Union";
+            location[5] = "Union";
             location[6] = "Thompson";
-            location[7] = "Town Holmes";
+            location[7] = "Townhomes";
             location[8] = "Tuttle";
             location[9] = "Welcome Center";
             LocationComboBox.Items.AddRange(location);
@@ -49,18 +50,17 @@ namespace BicycleRentalWPF
 
             StatusComboBox.SelectedIndex = 0;
 
-            myCaller = m;
-            InteractionState = "nothing";
+            InteractionState = "Insert";
         }
 
-        public BicycleDataInputForm(UpdateForm uf, int i, MainMenuForm1 m)
+        public BicycleDataInputForm(UpdateForm uf, int i, MainMenu mm)
         {
             InitializeComponent();
 
             myCaller = uf;
-            mainMenu = m;
+            mainMenu = mm;
 
-            RajIsMyFavorite.Text = "Modify Bicycle data";
+            BicycleDataInputFormTitle.Text = "Modify Bicycle data";
 
             Object[] location = new Object[10];
             location[0] = "Benedict";
@@ -68,9 +68,9 @@ namespace BicycleRentalWPF
             location[2] = "Harmon";
             location[3] = "McFarlane";
             location[4] = "Mortimer";
-            location[5] = "Seymour College Union";
+            location[5] = "Union";
             location[6] = "Thompson";
-            location[7] = "Town Holmes";
+            location[7] = "Townhomes";
             location[8] = "Tuttle";
             location[9] = "Welcome Center";
             LocationComboBox.Items.AddRange(location);
@@ -104,7 +104,7 @@ namespace BicycleRentalWPF
             id = i;
         }
 
-         public BicycleDataInputForm(DeleteForm df, int i, MainMenuForm1 m)
+         public BicycleDataInputForm(DeleteForm df, int i, MainMenu m)
         {
             InitializeComponent();
             myCaller = df;
@@ -116,9 +116,9 @@ namespace BicycleRentalWPF
             location[2] = "Harmon";
             location[3] = "McFarlane";
             location[4] = "Mortimer";
-            location[5] = "Seymour College Union";
+            location[5] = "Union";
             location[6] = "Thompson";
-            location[7] = "Town Holmes";
+            location[7] = "Townhomes";
             location[8] = "Tuttle";
             location[9] = "Welcome Center";
             LocationComboBox.Items.AddRange(location);
@@ -136,7 +136,7 @@ namespace BicycleRentalWPF
             Vehicle existingVehicle = new Vehicle();
 
             existingVehicle.populate(i);
-            RajIsMyFavorite.Text = "Hit submit to confirm deletion";
+            BicycleDataInputFormTitle.Text = "Click SUBMIT to delete";
             BikeMakeBox.Text = existingVehicle.BikeMake;
             ModelNumberBox.Text = existingVehicle.ModelNumber;
             SerialNumberBox.Text = existingVehicle.SerialNumber;
@@ -153,7 +153,7 @@ namespace BicycleRentalWPF
 
         private void SubmitButton_Click(object sender, EventArgs e)
         {
-            if (InteractionState.Equals("nothing"))
+            if (InteractionState.Equals("insert"))
             {
                 string bikeMake = BikeMakeBox.Text;
                 string modelNumber = ModelNumberBox.Text;
@@ -169,7 +169,7 @@ namespace BicycleRentalWPF
                     color, description, location, physicalDescription, notes);
                 newVehicle.insert();
 
-                System.Windows.Forms.MessageBox.Show("Bike insert successful!");
+                System.Windows.Forms.MessageBox.Show("Successfully inserted bicycle");
 
                 this.Hide();
                 myCaller.Show();
@@ -191,7 +191,7 @@ namespace BicycleRentalWPF
 
                 existingVehicle.update();
 
-                System.Windows.Forms.MessageBox.Show("Bike update successful!");
+                System.Windows.Forms.MessageBox.Show("Successfully updated bicycle");
 
                 this.Hide();
                 mainMenu.Show();
@@ -203,7 +203,7 @@ namespace BicycleRentalWPF
 
                 existingVehicle.delete();
 
-                System.Windows.Forms.MessageBox.Show("Bike delete successful!");
+                System.Windows.Forms.MessageBox.Show("Successfully deleted bicycle");
 
                 this.Hide();
                 mainMenu.Show();

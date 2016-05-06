@@ -30,7 +30,7 @@
         {
       this.FormTitle = new System.Windows.Forms.Label();
       this.ID = new System.Windows.Forms.Label();
-      this.IDBox = new System.Windows.Forms.TextBox();
+      this.IdTextBox = new System.Windows.Forms.TextBox();
       this.SubmitButton = new System.Windows.Forms.Button();
       this.BackButton = new System.Windows.Forms.Button();
       this.SuspendLayout();
@@ -61,14 +61,14 @@
       this.ID.TabIndex = 1;
       this.ID.Text = "ID:";
       // 
-      // IDBox
+      // IdTextBox
       // 
-      this.IDBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(29)))), ((int)(((byte)(18)))));
-      this.IDBox.Location = new System.Drawing.Point(218, 113);
-      this.IDBox.Margin = new System.Windows.Forms.Padding(6);
-      this.IDBox.Name = "IDBox";
-      this.IDBox.Size = new System.Drawing.Size(200, 29);
-      this.IDBox.TabIndex = 2;
+      this.IdTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(29)))), ((int)(((byte)(18)))));
+      this.IdTextBox.Location = new System.Drawing.Point(218, 113);
+      this.IdTextBox.Margin = new System.Windows.Forms.Padding(6);
+      this.IdTextBox.Name = "IdTextBox";
+      this.IdTextBox.Size = new System.Drawing.Size(200, 29);
+      this.IdTextBox.TabIndex = 2;
       // 
       // SubmitButton
       // 
@@ -106,7 +106,7 @@
       this.ClientSize = new System.Drawing.Size(541, 280);
       this.Controls.Add(this.BackButton);
       this.Controls.Add(this.SubmitButton);
-      this.Controls.Add(this.IDBox);
+      this.Controls.Add(this.IdTextBox);
       this.Controls.Add(this.ID);
       this.Controls.Add(this.FormTitle);
       this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -123,7 +123,7 @@
 
         private System.Windows.Forms.Label FormTitle;
         private System.Windows.Forms.Label ID;
-        private System.Windows.Forms.TextBox IDBox;
+        private System.Windows.Forms.TextBox IdTextBox;
         private System.Windows.Forms.Button SubmitButton;
         private System.Windows.Forms.Button BackButton;
     }

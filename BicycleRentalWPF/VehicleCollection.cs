@@ -20,7 +20,7 @@ namespace BicycleRentalWPF
 
         public void populateWithGoodAndAvailableBikes()
         {
-            string queryString = "SELECT ID FROM Vehicle WHERE (PhysicalCondition = 'Good' AND Status = 'Active')";
+            string queryString = "SELECT ID FROM Vehicle WHERE (PhysicalCondition = 'Good' AND Status = 'Available')";
             List<Object> results = getValues(queryString);
             if (results != null)
             {

@@ -12,48 +12,49 @@ namespace BicycleRentalWPF
 {
     public partial class DeleteForm : Form
     {
-        MainMenuForm1 myCaller;
-        string dataToDelete;
+        MainMenu myCaller;
+        string stringToDelete;
 
-        public DeleteForm(MainMenuForm1 m, string s)
+        public DeleteForm(MainMenu mm, string s)
         {
             InitializeComponent();
+            myCaller = mm;
+
             if (s.Equals("deleteUser"))
             {
-                FormTitle.Text = "Enter BannerID of User to delete";
+                FormTitle.Text = "Enter BannerId of the User you wish to delete";
             }
             else if (s.Equals("deleteWorker"))
             {
-                FormTitle.Text = "Enter BannerID of Worker to delete";
+                FormTitle.Text = "Enter BannerId of the Worker you wish to delete";
             }
             else if (s.Equals("deleteBicycle"))
             {
-                FormTitle.Text = "Enter BicycleID of Bike to delete";
+                FormTitle.Text = "Enter BicycleId of the Bike you wish to delete";
             }
-            myCaller = m;
-            dataToDelete = s;
+            stringToDelete = s;
         }
 
 
         private void SubmitButton_Click(object sender, EventArgs e)
         {
-            if (dataToDelete.Equals("deleteUser"))
+          if (stringToDelete.Equals("deleteUser"))
             {
-                string id = IDBox.Text;
+                string id = IdTextBox.Text;
                 this.Hide();
                 UserDataInputForm udif = new UserDataInputForm(this, id, myCaller);
                 udif.Show();
             }
-            else if (dataToDelete.Equals("deleteWorker"))
+          else if (stringToDelete.Equals("deleteWorker"))
             {
-                string id = IDBox.Text;
+                string id = IdTextBox.Text;
                 this.Hide();
                 WorkerDataInputForm wdif = new WorkerDataInputForm(this, id, myCaller);
                 wdif.Show();
             }
-            else if (dataToDelete.Equals("deleteBicycle"))
+          else if (stringToDelete.Equals("deleteBicycle"))
             {
-                int id = Convert.ToInt32(IDBox.Text);
+                int id = Convert.ToInt32(IdTextBox.Text);
                 this.Hide();
                 BicycleDataInputForm bdif = new BicycleDataInputForm(this, id, myCaller);
                 bdif.Show();

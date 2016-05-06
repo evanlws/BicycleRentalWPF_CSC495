@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
       this.FormTitle = new System.Windows.Forms.Label();
-      this.EnterID = new System.Windows.Forms.Label();
+      this.EnterIdLabel = new System.Windows.Forms.Label();
       this.BannerIDBox = new System.Windows.Forms.TextBox();
-      this.ChooseBicycle = new System.Windows.Forms.Label();
+      this.ChooseBicycleLabel = new System.Windows.Forms.Label();
       this.ChooseBicycleComboBox = new System.Windows.Forms.ComboBox();
       this.BackButton = new System.Windows.Forms.Button();
       this.SubmitButton = new System.Windows.Forms.Button();
@@ -50,18 +50,18 @@
       this.FormTitle.TabIndex = 0;
       this.FormTitle.Text = "Rent A Bicycle";
       // 
-      // EnterID
+      // EnterIdLabel
       // 
-      this.EnterID.AutoSize = true;
-      this.EnterID.BackColor = System.Drawing.Color.Transparent;
-      this.EnterID.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.EnterID.ForeColor = System.Drawing.Color.Black;
-      this.EnterID.Location = new System.Drawing.Point(101, 135);
-      this.EnterID.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-      this.EnterID.Name = "EnterID";
-      this.EnterID.Size = new System.Drawing.Size(212, 22);
-      this.EnterID.TabIndex = 1;
-      this.EnterID.Text = "Enter Renter Banner ID:";
+      this.EnterIdLabel.AutoSize = true;
+      this.EnterIdLabel.BackColor = System.Drawing.Color.Transparent;
+      this.EnterIdLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.EnterIdLabel.ForeColor = System.Drawing.Color.Black;
+      this.EnterIdLabel.Location = new System.Drawing.Point(101, 135);
+      this.EnterIdLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+      this.EnterIdLabel.Name = "EnterIdLabel";
+      this.EnterIdLabel.Size = new System.Drawing.Size(212, 22);
+      this.EnterIdLabel.TabIndex = 1;
+      this.EnterIdLabel.Text = "Enter Renter Banner ID:";
       // 
       // BannerIDBox
       // 
@@ -73,18 +73,18 @@
       this.BannerIDBox.TabIndex = 2;
       this.BannerIDBox.TabStop = false;
       // 
-      // ChooseBicycle
+      // ChooseBicycleLabel
       // 
-      this.ChooseBicycle.AutoSize = true;
-      this.ChooseBicycle.BackColor = System.Drawing.Color.Transparent;
-      this.ChooseBicycle.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.ChooseBicycle.ForeColor = System.Drawing.Color.Black;
-      this.ChooseBicycle.Location = new System.Drawing.Point(101, 207);
-      this.ChooseBicycle.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-      this.ChooseBicycle.Name = "ChooseBicycle";
-      this.ChooseBicycle.Size = new System.Drawing.Size(148, 22);
-      this.ChooseBicycle.TabIndex = 3;
-      this.ChooseBicycle.Text = "Choose Bicycle:";
+      this.ChooseBicycleLabel.AutoSize = true;
+      this.ChooseBicycleLabel.BackColor = System.Drawing.Color.Transparent;
+      this.ChooseBicycleLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.ChooseBicycleLabel.ForeColor = System.Drawing.Color.Black;
+      this.ChooseBicycleLabel.Location = new System.Drawing.Point(101, 207);
+      this.ChooseBicycleLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+      this.ChooseBicycleLabel.Name = "ChooseBicycleLabel";
+      this.ChooseBicycleLabel.Size = new System.Drawing.Size(148, 22);
+      this.ChooseBicycleLabel.TabIndex = 3;
+      this.ChooseBicycleLabel.Text = "Choose Bicycle:";
       // 
       // ChooseBicycleComboBox
       // 
@@ -133,9 +133,9 @@
       this.Controls.Add(this.SubmitButton);
       this.Controls.Add(this.BackButton);
       this.Controls.Add(this.ChooseBicycleComboBox);
-      this.Controls.Add(this.ChooseBicycle);
+      this.Controls.Add(this.ChooseBicycleLabel);
       this.Controls.Add(this.BannerIDBox);
-      this.Controls.Add(this.EnterID);
+      this.Controls.Add(this.EnterIdLabel);
       this.Controls.Add(this.FormTitle);
       this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.ForeColor = System.Drawing.Color.White;
@@ -150,9 +150,9 @@
         #endregion
 
         private System.Windows.Forms.Label FormTitle;
-        private System.Windows.Forms.Label EnterID;
+        private System.Windows.Forms.Label EnterIdLabel;
         private System.Windows.Forms.TextBox BannerIDBox;
-        private System.Windows.Forms.Label ChooseBicycle;
+        private System.Windows.Forms.Label ChooseBicycleLabel;
         private System.Windows.Forms.ComboBox ChooseBicycleComboBox;
         private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.Button SubmitButton;

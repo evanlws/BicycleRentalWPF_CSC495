@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace BicycleRentalWPF
 {
-    public partial class MainMenuForm1 : Form
+    public partial class MainMenu : Form
     {
         MainWindow myCaller;
         public Worker currentWorker;
 
-        public MainMenuForm1(MainWindow m, Worker cw)
+        public MainMenu(MainWindow m, Worker cw)
         {
             InitializeComponent();
             myCaller = m;

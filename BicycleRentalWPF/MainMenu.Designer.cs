@@ -1,6 +1,6 @@
 ﻿namespace BicycleRentalWPF
 {
-    partial class MainMenuForm1
+    partial class MainMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -41,7 +41,7 @@
       this.RentBicycleButton = new System.Windows.Forms.Button();
       this.ReturnBicycleButton = new System.Windows.Forms.Button();
       this.BackButton = new System.Windows.Forms.Button();
-      this.button1 = new System.Windows.Forms.Button();
+      this.ExitButton = new System.Windows.Forms.Button();
       this.InsertUserButton = new System.Windows.Forms.Button();
       this.SuspendLayout();
       // 
@@ -64,7 +64,7 @@
       this.Menu.BackColor = System.Drawing.Color.Transparent;
       this.Menu.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.Menu.ForeColor = System.Drawing.Color.Black;
-      this.Menu.Location = new System.Drawing.Point(262, 63);
+      this.Menu.Location = new System.Drawing.Point(262, 58);
       this.Menu.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
       this.Menu.Name = "Menu";
       this.Menu.Size = new System.Drawing.Size(100, 22);
@@ -225,18 +225,18 @@
       this.BackButton.UseVisualStyleBackColor = false;
       this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
       // 
-      // button1
+      // ExitButton
       // 
-      this.button1.BackColor = System.Drawing.Color.Transparent;
-      this.button1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.button1.ForeColor = System.Drawing.Color.Black;
-      this.button1.Location = new System.Drawing.Point(347, 340);
-      this.button1.Name = "button1";
-      this.button1.Size = new System.Drawing.Size(150, 43);
-      this.button1.TabIndex = 16;
-      this.button1.Text = "EXIT";
-      this.button1.UseVisualStyleBackColor = false;
-      this.button1.Click += new System.EventHandler(this.button1_Click);
+      this.ExitButton.BackColor = System.Drawing.Color.Transparent;
+      this.ExitButton.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.ExitButton.ForeColor = System.Drawing.Color.Black;
+      this.ExitButton.Location = new System.Drawing.Point(347, 340);
+      this.ExitButton.Name = "ExitButton";
+      this.ExitButton.Size = new System.Drawing.Size(150, 43);
+      this.ExitButton.TabIndex = 16;
+      this.ExitButton.Text = "EXIT";
+      this.ExitButton.UseVisualStyleBackColor = false;
+      this.ExitButton.Click += new System.EventHandler(this.button1_Click);
       // 
       // InsertUserButton
       // 
@@ -251,14 +251,14 @@
       this.InsertUserButton.UseVisualStyleBackColor = false;
       this.InsertUserButton.Click += new System.EventHandler(this.InsertUserButton_Click_1);
       // 
-      // MainMenuForm1
+      // MainMenu
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.BackColor = System.Drawing.Color.White;
       this.ClientSize = new System.Drawing.Size(600, 398);
       this.Controls.Add(this.InsertUserButton);
-      this.Controls.Add(this.button1);
+      this.Controls.Add(this.ExitButton);
       this.Controls.Add(this.BackButton);
       this.Controls.Add(this.ReturnBicycleButton);
       this.Controls.Add(this.RentBicycleButton);
@@ -275,7 +275,7 @@
       this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(29)))), ((int)(((byte)(18)))));
       this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-      this.Name = "MainMenuForm1";
+      this.Name = "MainMenu";
       this.Text = "MainMenuForm1";
       this.ResumeLayout(false);
       this.PerformLayout();
@@ -298,7 +298,7 @@
         private System.Windows.Forms.Button ReturnBicycleButton;
         private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.Button ModifyUserButton;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button ExitButton;
         private System.Windows.Forms.Button InsertUserButton;
     }
 }

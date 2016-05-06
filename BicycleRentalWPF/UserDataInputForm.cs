@@ -14,11 +14,11 @@ namespace BicycleRentalWPF
     {
         
         Form myCaller;
-        MainMenuForm1 mainMenu;
+        MainMenu mainMenu;
         string InteractionState;
         string bannerID = " ";
 
-        public UserDataInputForm(MainMenuForm1 m)
+        public UserDataInputForm(MainMenu m)
         {
             InitializeComponent();
             myCaller = m;
@@ -41,7 +41,7 @@ namespace BicycleRentalWPF
 
         }
 
-        public UserDataInputForm(UpdateForm uf, string s, MainMenuForm1 m)
+        public UserDataInputForm(UpdateForm uf, string s, MainMenu m)
         {
             InitializeComponent();
             myCaller = uf;
@@ -77,7 +77,7 @@ namespace BicycleRentalWPF
             bannerID = s;
         }
 
-        public UserDataInputForm(DeleteForm df, string s, MainMenuForm1 m)
+        public UserDataInputForm(DeleteForm df, string s, MainMenu m)
         {
             InitializeComponent();
             myCaller = df;
