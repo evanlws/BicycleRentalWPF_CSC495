@@ -130,7 +130,7 @@ namespace BicycleRentalWPF
                 string status = Convert.ToString(StatusComboBox.SelectedItem);
 
                 Worker newWorker = new Worker(bannerID, firstName, lastName, phoneNumber,
-                    email, credential, workerPassword, notes);
+                    email, credential, workerPassword, notes, status);
                 newWorker.insert();
 
                 System.Windows.Forms.MessageBox.Show("Worker insert successful!");

@@ -32,7 +32,7 @@ namespace BicycleRentalWPF
 
         public Worker(string bannerID, string firstName, string lastName, string phoneNumber,
             string emailAddress, string credentials, string workerPassword,
-            string notes)
+            string notes, string status)
             : base()
         {
           connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;" +
@@ -46,7 +46,7 @@ namespace BicycleRentalWPF
             this.DateOfInitialRegistration = DateTime.Now.ToString("yyyy-MM-dd");
             this.WorkerPassword = workerPassword;
             this.Notes = notes;
-            this.Status = "Active";
+            this.Status = status;
             this.DateStatusUpdated = DateTime.Now.ToString("yyyy-MM-dd");
 
         }

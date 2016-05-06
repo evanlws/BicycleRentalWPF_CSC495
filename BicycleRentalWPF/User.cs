@@ -28,7 +28,7 @@ namespace BicycleRentalWPF
           @"Data source=..\BicycleRental.accdb";
         }
         public User(string bannerID, string firstName, string lastName, string phoneNumber,
-            string emailAddress, string userType, string notes)
+            string emailAddress, string userType, string notes, string status)
             : base()
         {
           connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;" +
@@ -40,7 +40,7 @@ namespace BicycleRentalWPF
             this.EmailAddress = emailAddress;
             this.UserType = userType;
             this.Notes = notes;
-            this.Status = "Active";
+            this.Status = status;
             this.DateStatusUpdated = DateTime.Now.ToString("yyyy-MM-dd");
 
         }

@@ -127,7 +127,7 @@ namespace BicycleRentalWPF
                 
 
                 User newUser = new User(bannerID, firstName, lastName, phoneNumber, email,
-                    userType, notes);
+                    userType, notes, status);
                 newUser.insert();
 
                 System.Windows.Forms.MessageBox.Show("User insert successful!");
