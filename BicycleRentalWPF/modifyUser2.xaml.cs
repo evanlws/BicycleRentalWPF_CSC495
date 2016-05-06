@@ -17,11 +17,16 @@ namespace BicycleRentalWPF
     /// <summary>
     /// Interaction logic for modifyUser.xaml
     /// </summary>
-    public partial class modifyUser : Window
+    public partial class modifyUser2 : Window
     {
-        public modifyUser()
+        public modifyUser2()
         {
             InitializeComponent();
+        }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            DialogResult = false;
         }
     }
 }

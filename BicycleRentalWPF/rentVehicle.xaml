@@ -1,4 +1,4 @@
-﻿<Window x:Class="BicycleRentalWPF.rentBicycle"
+﻿<Window x:Class="BicycleRentalWPF.rentVehicle"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -10,8 +10,8 @@
         <Label Content="Rent A Bicycle" Height="36" Margin="21,10,103,0" VerticalAlignment="Top" Width="322" FontSize="20" HorizontalAlignment="Center" FontWeight="Medium"/>
         <Label x:Name="BikeMakeLabel" Content="Enter Renter Banner ID" HorizontalAlignment="Left" Margin="21,63,0,0" VerticalAlignment="Top" Width="77"/>
         <TextBox x:Name="BannerIDTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="157,66,0,0"/>
-        <Button x:Name="BackButton" Content="Back" HorizontalAlignment="Left" Margin="89,204,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.317,-0.3" Height="20"/>
-        <Button x:Name="SubmitButton" Content="Submit" HorizontalAlignment="Left" Margin="268,204,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.317,-0.3" Height="20"/>
+        <Button x:Name="BackButton" Content="Back" HorizontalAlignment="Left" Margin="83,204,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.317,-0.3" Height="20" Click="BackButton_Click"/>
+        <Button x:Name="SubmitButton" Content="Submit" HorizontalAlignment="Left" Margin="288,204,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.317,-0.3" Height="20"/>
         <Label x:Name="BikeMakeLabel_Copy" Content="Choose Bicycle" HorizontalAlignment="Left" Margin="21,124,0,0" VerticalAlignment="Top" Width="89"/>
         <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="157,131,0,0" VerticalAlignment="Top" Width="265"/>
     </Grid>

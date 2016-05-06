@@ -9,7 +9,7 @@
     <Grid>
         <Label x:Name="TitleLabel" Content="Modify User Information " Height="36" Margin="38,10,162,0" VerticalAlignment="Top" Width="251" FontSize="20" HorizontalAlignment="Center" FontWeight="Medium"/>
         <Label x:Name="EnterBannerIDLabel" Content="Enter User Banner ID" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="38,64,0,0"/>
-        <Button x:Name="BackButton" Content="Back" HorizontalAlignment="Left" Margin="113,145,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.317,-0.3" Height="20"/>
+        <Button x:Name="BackButton" Content="Back" HorizontalAlignment="Left" Margin="113,145,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.317,-0.3" Height="20" Click="BackButton_Click"/>
         <Button x:Name="SubmitButton" Content="Submit" HorizontalAlignment="Left" Margin="292,145,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.317,-0.3" Height="20"/>
         <TextBox x:Name="BannerIDTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" Margin="163,67,0,0"/>
 

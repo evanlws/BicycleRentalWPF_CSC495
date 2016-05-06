@@ -23,7 +23,7 @@
         <TextBox x:Name="DescriptionTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="228,183,-201,0"/>
         <TextBox x:Name="LocationTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="228,213,-201,0"/>
         <TextBox x:Name="PhysicalConditionTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="228,245,-201,0"/>
-        <Button x:Name="BackButton" Content="Back" HorizontalAlignment="Left" Margin="130,363,0,-114" VerticalAlignment="Top" Width="76" RenderTransformOrigin="0.317,-0.3" Height="20"/>
+        <Button x:Name="BackButton" Content="Back" HorizontalAlignment="Left" Margin="130,363,0,-114" VerticalAlignment="Top" Width="76" RenderTransformOrigin="0.317,-0.3" Height="20" Click="BackButton_Click"/>
         <Button x:Name="SubmitButton" Content="Submit" HorizontalAlignment="Left" Margin="310,363,-92,-114" VerticalAlignment="Top" Width="74" RenderTransformOrigin="0.317,-0.3" Height="20"/>
         <ComboBox x:Name="StatusComboBox" HorizontalAlignment="Left" Margin="228,308,-201,-61" VerticalAlignment="Top" Width="265"/>
         <Label x:Name="NotesLabel" Content="Notes" HorizontalAlignment="Left" Margin="34,273,0,-30" VerticalAlignment="Top" Width="110"/>

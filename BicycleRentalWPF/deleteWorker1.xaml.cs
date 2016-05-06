@@ -17,11 +17,16 @@ namespace BicycleRentalWPF
     /// <summary>
     /// Interaction logic for deleteWorker.xaml
     /// </summary>
-    public partial class deleteWorker : Window
+    public partial class deleteWorker1 : Window
     {
-        public deleteWorker()
+        public deleteWorker1()
         {
             InitializeComponent();
+        }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            DialogResult = false;
         }
     }
 }

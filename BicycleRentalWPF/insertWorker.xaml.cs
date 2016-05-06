@@ -23,5 +23,21 @@ namespace BicycleRentalWPF
         {
             InitializeComponent();
         }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            DialogResult = false;
+        }
+
+        private void SubmitButton_Click(object sender, RoutedEventArgs e)
+        {
+
+
+
+
+
+
+
+        }
     }
 }

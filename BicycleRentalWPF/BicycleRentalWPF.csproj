@@ -53,6 +53,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DatabaseController.cs" />
     <Compile Include="DataValidation.cs" />
     <Compile Include="deleteUser1.xaml.cs">
       <DependentUpon>deleteUser1.xaml</DependentUpon>

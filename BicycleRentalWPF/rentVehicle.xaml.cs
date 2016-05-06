@@ -17,11 +17,17 @@ namespace BicycleRentalWPF
     /// <summary>
     /// Interaction logic for rentBicycle.xaml
     /// </summary>
-    public partial class rentBicycle : Window
+    public partial class rentVehicle : Window
     {
-        public rentBicycle()
+        public rentVehicle()
         {
             InitializeComponent();
+        }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            DialogResult = false;
+
         }
     }
 }

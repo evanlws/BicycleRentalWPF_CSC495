@@ -9,18 +9,18 @@
     <Grid Margin="0,0,-8,-1">
         <Label Content="Brockport Bicycle Rental System" Height="36" Margin="94,24,84,0" VerticalAlignment="Top" Width="326" FontSize="20" HorizontalAlignment="Center" FontWeight="Medium"/>
         <Label Content="Main Menu" Height="36" Margin="170,60,198,0" VerticalAlignment="Top" Width="136" FontSize="20" HorizontalAlignment="Center" FontWeight="Medium"/>
-        <Button x:Name="deleteUserButton" Content="Delete User" HorizontalAlignment="Left" Margin="29,164,0,0" VerticalAlignment="Top" Width="139" Height="20"/>
+        <Button x:Name="deleteUserButton" Content="Delete User" HorizontalAlignment="Left" Margin="29,164,0,0" VerticalAlignment="Top" Width="139" Height="20" Click="deleteUserButton_Click"/>
         <Button x:Name="insertUserButton" Content="Insert User" HorizontalAlignment="Left" Margin="29,104,0,0" VerticalAlignment="Top" Width="139" Height="20" Click="insertUserButton_Click"/>
-        <Button x:Name="modifyUserButton" Content="Modify User" HorizontalAlignment="Left" Margin="29,134,0,0" VerticalAlignment="Top" Width="139" Height="20"/>
-        <Button x:Name="deleteWorkerButton" Content="Delete Worker" HorizontalAlignment="Left" Margin="186,164,0,0" VerticalAlignment="Top" Width="139" Height="20"/>
-        <Button x:Name="insertWorkerButton" Content="Insert Worker" HorizontalAlignment="Left" Margin="186,104,0,0" VerticalAlignment="Top" Width="139" Height="20"/>
-        <Button x:Name="modifyWorkerButton" Content="Modify Worker" HorizontalAlignment="Left" Margin="186,134,0,0" VerticalAlignment="Top" Width="139" Height="20"/>
-        <Button x:Name="deleteBicycleButton" Content="Delete Bicycle" HorizontalAlignment="Left" Margin="340,164,0,0" VerticalAlignment="Top" Width="139" Height="20"/>
-        <Button x:Name="insertBicycleButton" Content="Insert Bicycle" HorizontalAlignment="Left" Margin="340,104,0,0" VerticalAlignment="Top" Width="139" Height="20"/>
-        <Button x:Name="modifyBicycleButton" Content="Modify Bicycle" HorizontalAlignment="Left" Margin="340,134,0,0" VerticalAlignment="Top" Width="139" Height="20"/>
-        <Button x:Name="returnBicycleButton" Content="Return Bicycle" HorizontalAlignment="Left" Margin="272,213,0,0" VerticalAlignment="Top" Width="111" RenderTransformOrigin="0.317,-0.3" Height="20"/>
-        <Button x:Name="mainMenuBackButton" Content="Back" HorizontalAlignment="Left" Margin="206,255,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.317,-0.3" Height="20"/>
-        <Button x:Name="rentBicycleButton" Content="Rent a Bicycle" HorizontalAlignment="Left" Margin="118,213,0,0" VerticalAlignment="Top" Width="111" RenderTransformOrigin="0.317,-0.3" Height="20"/>
+        <Button x:Name="modifyUserButton" Content="Modify User" HorizontalAlignment="Left" Margin="29,134,0,0" VerticalAlignment="Top" Width="139" Height="20" Click="modifyUserButton_Click_1"/>
+        <Button x:Name="deleteWorkerButton" Content="Delete Worker" HorizontalAlignment="Left" Margin="186,164,0,0" VerticalAlignment="Top" Width="139" Height="20" Click="deleteWorkerButton_Click"/>
+        <Button x:Name="insertWorkerButton" Content="Insert Worker" HorizontalAlignment="Left" Margin="186,104,0,0" VerticalAlignment="Top" Width="139" Height="20" Click="insertWorkerButton_Click"/>
+        <Button x:Name="modifyWorkerButton" Content="Modify Worker" HorizontalAlignment="Left" Margin="186,134,0,0" VerticalAlignment="Top" Width="139" Height="20" Click="modifyWorkerButton_Click"/>
+        <Button x:Name="deleteBicycleButton" Content="Delete Bicycle" HorizontalAlignment="Left" Margin="340,164,0,0" VerticalAlignment="Top" Width="139" Height="20" Click="deleteBicycleButton_Click"/>
+        <Button x:Name="insertBicycleButton" Content="Insert Bicycle" HorizontalAlignment="Left" Margin="340,104,0,0" VerticalAlignment="Top" Width="139" Height="20" Click="insertBicycleButton_Click"/>
+        <Button x:Name="modifyBicycleButton" Content="Modify Bicycle" HorizontalAlignment="Left" Margin="340,134,0,0" VerticalAlignment="Top" Width="139" Height="20" Click="modifyBicycleButton_Click"/>
+        <Button x:Name="returnBicycleButton" Content="Return Bicycle" HorizontalAlignment="Left" Margin="272,213,0,0" VerticalAlignment="Top" Width="111" RenderTransformOrigin="0.317,-0.3" Height="20" Click="returnBicycleButton_Click"/>
+        <Button x:Name="mainMenuBackButton" Content="Back" HorizontalAlignment="Left" Margin="206,255,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.317,-0.3" Height="20" Click="mainMenuBackButton_Click"/>
+        <Button x:Name="rentBicycleButton" Content="Rent a Bicycle" HorizontalAlignment="Left" Margin="118,213,0,0" VerticalAlignment="Top" Width="111" RenderTransformOrigin="0.317,-0.3" Height="20" Click="rentBicycleButton_Click"/>
 
     </Grid>
 </Window>

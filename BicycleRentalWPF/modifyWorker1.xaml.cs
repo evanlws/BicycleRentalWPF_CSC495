@@ -17,11 +17,25 @@ namespace BicycleRentalWPF
     /// <summary>
     /// Interaction logic for modifyWorker.xaml
     /// </summary>
-    public partial class modifyWorker : Window
+    public partial class modifyWorker1 : Window
     {
-        public modifyWorker()
+        public modifyWorker1()
         {
             InitializeComponent();
+        }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            DialogResult = false;
+        }
+
+        private void SubmitButton_Click(object sender, RoutedEventArgs e)
+        {
+
+
+
+
+
         }
     }
 }

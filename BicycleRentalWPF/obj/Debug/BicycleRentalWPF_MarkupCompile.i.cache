@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-C:\Users\Van\Desktop\C# Final Project wpf\BicycleRentalWPF_CSC495\BicycleRentalWPF\obj\Debug\
+\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\obj\Debug\
 BicycleRentalWPF
 none
 false
 DEBUG;TRACE
-C:\Users\Van\Desktop\C# Final Project wpf\BicycleRentalWPF_CSC495\BicycleRentalWPF\App.xaml
+\\Mac\Home\Desktop\BicycleRentalWPF_CSC495-4b6068fee603a3581d51386fa1b96bfad9876fcc\BicycleRentalWPF\App.xaml
 19907521905
 
-361316703952
+37-1063486075
 12-1401562060
 deleteUser1.xaml;deleteUser2.xaml;deleteVehicle1.xaml;deleteVehicle2.xaml;deleteWorker1.xaml;deleteWorker2.xaml;insertUser.xaml;insertVehicle.xaml;insertWorker.xaml;mainMenu.xaml;MainWindow.xaml;modifyUser1.xaml;modifyUser2.xaml;modifyVechicle2.xaml;modifyVehicle1.xaml;modifyWorker1.xaml;modifyWorker2.xaml;rentVehicle.xaml;returnVehicle.xaml;
 

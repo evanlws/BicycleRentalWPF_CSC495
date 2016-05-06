@@ -20,10 +20,10 @@ namespace BicycleRentalWPF
   /// Interaction logic for MainWindow.xaml
   /// </summary>
   /// 
-  public partial class MainWindow : Window
+  public partial class LoginWindow : Window
   {
       
-        public MainWindow()
+        public LoginWindow()
     {
       InitializeComponent();
     }
@@ -35,24 +35,19 @@ namespace BicycleRentalWPF
 
     private void Button_Click(object sender, RoutedEventArgs e)
     {
+            DataValidation dv = new DataValidation();   
+        bool validLogin = true;
+        List<string> dataInput = new List<string>(){ BannerIDTextBox.Text, PasswordBox.Password };
 
-        bool validLogin = false;
-        //LOGIN
-        Worker worker = new Worker();
-        worker.setBannerId(BannerIDTextBox.Text);
-        worker.setWorkerPassword(PasswordBox.Password);
-           
-        //string bannerID = BannerIDTextBox.Text;
-        //string password = PasswordBox.Password;
-
-        validLogin = DataValidation.ValidateLogin(worker);   //check if ID and Password matches
+        validLogin = dv.Login(dataInput);   //check if ID and Password matches
        
-        if(validLogin)
+            if (validLogin)
         {
             mainMenu menu = new mainMenu(); //go to main menu
-            this.Hide();
-            menu.Show();   
-        }
+            menu.ShowDialog();
+            this.Close();
+
+            }
         else
         {
             MessageBox.Show("Incorrect password, please try again");

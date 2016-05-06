@@ -26,8 +26,8 @@
         <TextBox x:Name="NoteTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="213,271,0,0"/>
         <TextBox x:Name="StatusTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="213,302,0,0"/>
         <TextBox x:Name="DateStatusUpdateTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="213,332,0,0"/>
-        <Button x:Name="BackButton" Content="Back" HorizontalAlignment="Left" Margin="106,425,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.317,-0.3" Height="20"/>
-        <Button x:Name="SubmitButton" Content="Submit" HorizontalAlignment="Left" Margin="285,425,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.317,-0.3" Height="20"/>
+        <Button x:Name="BackButton" Content="Back" HorizontalAlignment="Left" Margin="106,425,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.317,-0.3" Height="20" Click="BackButton_Click"/>
+        <Button x:Name="SubmitButton" Content="Submit" HorizontalAlignment="Left" Margin="285,425,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.317,-0.3" Height="20" Click="SubmitButton_Click"/>
         <Label x:Name="DateStatusUpdateLabel_Copy" Content="Status" HorizontalAlignment="Left" Margin="33,357,0,0" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="DateStatusUpdateTextBox_Copy" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Margin="213,360,0,0"/>
 

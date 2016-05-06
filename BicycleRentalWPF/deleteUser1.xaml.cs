@@ -17,11 +17,16 @@ namespace BicycleRentalWPF
     /// <summary>
     /// Interaction logic for deleteUser.xaml
     /// </summary>
-    public partial class deleteUser : Window
+    public partial class deleteUser1 : Window
     {
-        public deleteUser()
+        public deleteUser1()
         {
             InitializeComponent();
+        }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            DialogResult = false;
         }
     }
 }
