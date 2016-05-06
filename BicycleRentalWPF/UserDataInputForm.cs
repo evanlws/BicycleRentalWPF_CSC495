@@ -81,7 +81,7 @@ namespace BicycleRentalWPF
         {
             InitializeComponent();
             myCaller = df;
-            UserDataLabel.Text = "Are you sure you want to delete this user? Hit SUBMIT to delete";
+            UserDataLabel.Text = "Are you sure? CLick SUBMIT to delete user";
             this.mainMenu = m;
             User existingUser = new User();
 

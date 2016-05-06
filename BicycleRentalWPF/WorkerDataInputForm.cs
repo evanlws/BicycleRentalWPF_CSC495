@@ -32,6 +32,13 @@ namespace BicycleRentalWPF
 
             StatusComboBox.SelectedIndex = 0;
 
+            Object[] credential = new Object[2];
+            credential[0] = "Administrator";
+            credential[1] = "Ordinary";
+            CredentialComboBox.Items.AddRange(credential);
+
+            CredentialComboBox.SelectedIndex = 1;
+
         }
 
         public WorkerDataInputForm(UpdateForm uf, string s, MainMenu m)
@@ -46,6 +53,11 @@ namespace BicycleRentalWPF
             status[1] = "Inactive";
             StatusComboBox.Items.AddRange(status);
 
+            Object[] credential = new Object[2];
+            credential[0] = "Administrator";
+            credential[1] = "Ordinary";
+            CredentialComboBox.Items.AddRange(credential);
+
             Worker existingWorker = new Worker();
 
             existingWorker.populateBannerID(s);
@@ -55,7 +67,7 @@ namespace BicycleRentalWPF
             LastNameBox.Text = existingWorker.LastName;
             PhoneNumberBox.Text = existingWorker.PhoneNumber;
             EmailBox.Text = existingWorker.EmailAddress;
-            credentialTextBox.Text = existingWorker.Credential;
+            CredentialComboBox.SelectedIndex = CredentialComboBox.FindStringExact(existingWorker.Credential);
             WorkerPasswordBox.Text = existingWorker.WorkerPassword;
             NotesBox.Text = existingWorker.Notes;
             StatusComboBox.SelectedIndex = StatusComboBox.FindStringExact(existingWorker.Status);
@@ -69,13 +81,18 @@ namespace BicycleRentalWPF
             InitializeComponent();
             myCaller = df;
             mainMenu = m;
-            WorkerDataLabel.Text = "Hit submit to confirm deletion";
+            WorkerDataLabel.Text = "Are you sure? Click SUBMIT to delete worker";
             WorkerPasswordBox.PasswordChar = '*';
 
             Object[] status = new Object[2];
             status[0] = "Active";
             status[1] = "Inactive";
             StatusComboBox.Items.AddRange(status);
+
+            Object[] credential = new Object[2];
+            credential[0] = "Administrator";
+            credential[1] = "Ordinary";
+            CredentialComboBox.Items.AddRange(credential);
 
             Worker existingWorker = new Worker();
 
@@ -87,7 +104,7 @@ namespace BicycleRentalWPF
             LastNameBox.Text = existingWorker.LastName;
             PhoneNumberBox.Text = existingWorker.PhoneNumber;
             EmailBox.Text = existingWorker.EmailAddress;
-            credentialTextBox.Text = existingWorker.Credential;
+            CredentialComboBox.SelectedIndex = CredentialComboBox.FindStringExact(existingWorker.Credential);
             StatusComboBox.SelectedIndex = StatusComboBox.FindStringExact(existingWorker.Status);
             WorkerPasswordBox.Text = existingWorker.WorkerPassword;
             NotesBox.Text = existingWorker.Notes;
@@ -107,7 +124,7 @@ namespace BicycleRentalWPF
                 string lastName = LastNameBox.Text;
                 string phoneNumber = PhoneNumberBox.Text;
                 string email = EmailBox.Text;
-                string credential = credentialTextBox.Text;
+                string credential = Convert.ToString(CredentialComboBox.SelectedItem);
                 string workerPassword = WorkerPasswordBox.Text;
                 string notes = NotesBox.Text;
                 string status = Convert.ToString(StatusComboBox.SelectedItem);
@@ -131,7 +148,7 @@ namespace BicycleRentalWPF
                 existingWorker.LastName = LastNameBox.Text;
                 existingWorker.PhoneNumber = PhoneNumberBox.Text;
                 existingWorker.EmailAddress = EmailBox.Text;
-                existingWorker.Credential = credentialTextBox.Text;
+                existingWorker.Credential = Convert.ToString(CredentialComboBox.SelectedItem);
                 existingWorker.WorkerPassword = WorkerPasswordBox.Text;
                 existingWorker.Notes = NotesBox.Text;
                 existingWorker.Status = Convert.ToString(StatusComboBox.SelectedItem);

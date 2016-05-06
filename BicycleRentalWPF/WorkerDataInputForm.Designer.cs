@@ -48,7 +48,7 @@
       this.SubmitButton = new System.Windows.Forms.Button();
       this.BackButton = new System.Windows.Forms.Button();
       this.StatusComboBox = new System.Windows.Forms.ComboBox();
-      this.credentialTextBox = new System.Windows.Forms.TextBox();
+      this.CredentialComboBox = new System.Windows.Forms.ComboBox();
       this.SuspendLayout();
       // 
       // WorkerDataLabel
@@ -282,14 +282,14 @@
       this.StatusComboBox.Size = new System.Drawing.Size(230, 32);
       this.StatusComboBox.TabIndex = 26;
       // 
-      // credentialTextBox
+      // CredentialComboBox
       // 
-      this.credentialTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(19)))), ((int)(((byte)(11)))));
-      this.credentialTextBox.Location = new System.Drawing.Point(300, 287);
-      this.credentialTextBox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-      this.credentialTextBox.Name = "credentialTextBox";
-      this.credentialTextBox.Size = new System.Drawing.Size(230, 29);
-      this.credentialTextBox.TabIndex = 27;
+      this.CredentialComboBox.FormattingEnabled = true;
+      this.CredentialComboBox.Location = new System.Drawing.Point(300, 287);
+      this.CredentialComboBox.Margin = new System.Windows.Forms.Padding(6);
+      this.CredentialComboBox.Name = "CredentialComboBox";
+      this.CredentialComboBox.Size = new System.Drawing.Size(230, 32);
+      this.CredentialComboBox.TabIndex = 27;
       // 
       // WorkerDataInputForm
       // 
@@ -297,7 +297,7 @@
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.BackColor = System.Drawing.Color.White;
       this.ClientSize = new System.Drawing.Size(563, 585);
-      this.Controls.Add(this.credentialTextBox);
+      this.Controls.Add(this.CredentialComboBox);
       this.Controls.Add(this.StatusComboBox);
       this.Controls.Add(this.BackButton);
       this.Controls.Add(this.SubmitButton);
@@ -349,6 +349,6 @@
         private System.Windows.Forms.Button SubmitButton;
         private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.ComboBox StatusComboBox;
-        private System.Windows.Forms.TextBox credentialTextBox;
+        private System.Windows.Forms.ComboBox CredentialComboBox;
     }
 }
