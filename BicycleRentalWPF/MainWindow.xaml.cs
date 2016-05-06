@@ -14,6 +14,11 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Forms;
 
+/*********
+ * Evan Lewis
+ * Van Le
+ ********/
+
 namespace BicycleRentalWPF
 {
  
